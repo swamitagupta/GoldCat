@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cno-4M-afl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Implement-->
+        <scene sceneID="yUZ-HJ-fIb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="viZ-6V-4mf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FCb-Eu-5dW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0Zp-yP-uFo"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Implement" image="camera.fill" catalog="system" id="7O4-d1-LLp"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxX-uC-f5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="886" y="850"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="3rw-pz-Pcp">
+            <objects>
+                <viewController id="NgB-MV-SKQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpU-hf-cZY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the Golden Ratio?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-ld-Al2">
+                                <rect key="frame" x="20" y="75" width="335" height="29"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                <color key="textColor" name="Golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
+                                <rect key="frame" x="20" y="112" width="374" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9cV-cg-5hi" firstAttribute="leading" secondItem="Hge-W2-2cp" secondAttribute="leading" constant="20" id="Jdg-qY-OBB"/>
+                            <constraint firstItem="Hge-W2-2cp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LWG-ld-Al2" secondAttribute="trailing" symbolic="YES" id="KcT-4Z-bcC"/>
+                            <constraint firstItem="LWG-ld-Al2" firstAttribute="leading" secondItem="Hge-W2-2cp" secondAttribute="leading" constant="20" id="PAY-3C-eS6"/>
+                            <constraint firstItem="LWG-ld-Al2" firstAttribute="top" secondItem="Hge-W2-2cp" secondAttribute="top" constant="31" id="Pp0-0D-qdh"/>
+                            <constraint firstItem="9cV-cg-5hi" firstAttribute="top" secondItem="LWG-ld-Al2" secondAttribute="bottom" constant="8" id="mjS-UF-uDg"/>
+                            <constraint firstItem="Hge-W2-2cp" firstAttribute="trailing" secondItem="9cV-cg-5hi" secondAttribute="trailing" constant="20" id="yPQ-yd-6fG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hge-W2-2cp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="V3r-uW-zYC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFD-nc-nqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="197.54464285714286"/>
+        </scene>
+        <!--Applications-->
+        <scene sceneID="1hi-Pb-CS1">
+            <objects>
+                <viewController id="5fg-xJ-7Qf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Fb-TA-cJs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jfX-SZ-arE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Applications" image="lightbulb.fill" catalog="system" id="6dP-g3-yJA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlW-VP-x5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="-451"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Tl-KM-T7T">
+            <objects>
+                <tabBarController id="Cno-4M-afl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zqg-YH-DUw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="Golden"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5fg-xJ-7Qf" kind="relationship" relationship="viewControllers" id="8Cy-Zh-Y4o"/>
+                        <segue destination="NgB-MV-SKQ" kind="relationship" relationship="viewControllers" id="cog-Ey-ssX"/>
+                        <segue destination="viZ-6V-4mf" kind="relationship" relationship="viewControllers" id="5dC-0d-yax"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WjB-u3-9n3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="200"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <namedColor name="Golden">
+            <color red="0.83137254901960778" green="0.68627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
