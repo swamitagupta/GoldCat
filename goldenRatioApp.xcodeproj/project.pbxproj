@@ -21,6 +21,8 @@
 		70366AD5250A4692000754FA /* Applications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD4250A4692000754FA /* Applications.swift */; };
 		70366AD7250A4CB2000754FA /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD6250A4CB2000754FA /* ObjectViewController.swift */; };
 		70366AD9250A568A000754FA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD8250A568A000754FA /* DetailViewController.swift */; };
+		70366ADC250A7132000754FA /* CrimsonText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70366ADB250A7132000754FA /* CrimsonText-Regular.ttf */; };
+		70366ADE250A7140000754FA /* LongCang-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70366ADD250A7140000754FA /* LongCang-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		70366AD4250A4692000754FA /* Applications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applications.swift; sourceTree = "<group>"; };
 		70366AD6250A4CB2000754FA /* ObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectViewController.swift; sourceTree = "<group>"; };
 		70366AD8250A568A000754FA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		70366ADB250A7132000754FA /* CrimsonText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Regular.ttf"; sourceTree = "<group>"; };
+		70366ADD250A7140000754FA /* LongCang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LongCang-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				70366AC6250A1739000754FA /* Controller */,
 				70366AB525074123000754FA /* ViewController.swift */,
 				70366ABA25074129000754FA /* Assets.xcassets */,
+				70366ADA250A710F000754FA /* Fonts */,
 				70366ABF25074129000754FA /* Info.plist */,
 			);
 			path = goldenRatioApp;
@@ -113,6 +118,15 @@
 				70366ABC25074129000754FA /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		70366ADA250A710F000754FA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				70366ADB250A7132000754FA /* CrimsonText-Regular.ttf */,
+				70366ADD250A7140000754FA /* LongCang-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +189,9 @@
 			files = (
 				70366ABE25074129000754FA /* LaunchScreen.storyboard in Resources */,
 				70366ABB25074129000754FA /* Assets.xcassets in Resources */,
+				70366ADC250A7132000754FA /* CrimsonText-Regular.ttf in Resources */,
 				70366AB925074123000754FA /* Main.storyboard in Resources */,
+				70366ADE250A7140000754FA /* LongCang-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

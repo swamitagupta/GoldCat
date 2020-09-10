@@ -11,12 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textLabel.text = theory.text
+        textView.text = theory.text
         imageView.isHidden = true
 
         // Do any additional setup after loading the view.
@@ -26,10 +26,10 @@ class HomeViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            textLabel.text = theory.text
+            textView.text = theory.text
             imageView.isHidden = true
         case 1:
-            textLabel.text = illustration.text
+            textView.text = illustration.text
             imageView.isHidden = false
         default:
             break
