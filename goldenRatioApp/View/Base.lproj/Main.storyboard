@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="2058" y="850"/>
         </scene>
-        <!--Home-->
+        <!--About-->
         <scene sceneID="3rw-pz-Pcp">
             <objects>
                 <viewController id="NgB-MV-SKQ" customClass="HomeViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,11 +99,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="agu-YC-IfV">
-                                <rect key="frame" x="20" y="191" width="183" height="32"/>
+                                <rect key="frame" x="20" y="191" width="169" height="32"/>
                                 <color key="backgroundColor" name="Golden"/>
                                 <segments>
                                     <segment title="Theory"/>
-                                    <segment title="Illustrations"/>
+                                    <segment title="Illustration"/>
                                 </segments>
                                 <color key="tintColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -154,7 +154,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hge-W2-2cp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="V3r-uW-zYC"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="V3r-uW-zYC"/>
                     <connections>
                         <outlet property="image" destination="aGz-CS-RoH" id="cwK-af-jd2"/>
                         <outlet property="segmentedControl" destination="agu-YC-IfV" id="peG-kK-Uwa"/>
@@ -175,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-iG-8L3">
-                                <rect key="frame" x="30" y="138" width="354" height="675"/>
+                                <rect key="frame" x="30" y="118" width="354" height="695"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VDp-S1-WqP">
                                     <size key="itemSize" width="128" height="128"/>
@@ -235,7 +235,7 @@
                         <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4bM-iG-8L3" firstAttribute="leading" secondItem="1Fb-TA-cJs" secondAttribute="leading" constant="30" id="Hm7-fV-yRF"/>
-                            <constraint firstItem="4bM-iG-8L3" firstAttribute="top" secondItem="jfX-SZ-arE" secondAttribute="top" constant="50" id="bUu-ER-tsu"/>
+                            <constraint firstItem="4bM-iG-8L3" firstAttribute="top" secondItem="jfX-SZ-arE" secondAttribute="top" constant="30" id="bUu-ER-tsu"/>
                             <constraint firstItem="jfX-SZ-arE" firstAttribute="bottom" secondItem="4bM-iG-8L3" secondAttribute="bottom" id="gnj-Vv-b2E"/>
                             <constraint firstAttribute="trailing" secondItem="4bM-iG-8L3" secondAttribute="trailing" constant="30" id="oKZ-lp-igJ"/>
                         </constraints>
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlW-VP-x5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1626" y="-451"/>
+            <point key="canvasLocation" x="1624.6376811594205" y="-451.33928571428567"/>
         </scene>
         <!--Object View Controller-->
         <scene sceneID="Crk-Iw-qmZ">
@@ -444,7 +444,7 @@
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="diagram" width="1440" height="900"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <namedColor name="DarkBlue">
             <color red="0.10300000011920929" green="0.10499999672174454" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
