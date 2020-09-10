@@ -9,6 +9,8 @@
 
 ## Introduction
 
+## Project Screenshots
+
 ## Steps to Run
 * Clone or download the the repository. 
 * Open project file in terminal.
