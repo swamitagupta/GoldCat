@@ -13,7 +13,7 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var collectionView: UICollectionView!
     var ind = 0
     
-    let fields = ["Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math", "Pyramids"]
+    let fields = ["Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
     let icons = [UIImage(systemName: "pencil.and.outline")
     ,UIImage(systemName: "house")
     ,UIImage(systemName: "gear")
@@ -21,8 +21,7 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
     ,UIImage(systemName: "music.note.list")
     ,UIImage(systemName: "dollarsign.circle")
     ,UIImage(systemName: "globe")
-    ,UIImage(systemName: "plus.slash.minus")
-    ,UIImage(systemName: "triangle.lefthalf.fill") ]
+    ,UIImage(systemName: "plus.slash.minus")]
 
 
     override func viewDidLoad() {

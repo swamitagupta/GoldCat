@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your image using the camera icon! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-Bm-EGT">
-                                <rect key="frame" x="22.5" y="436.5" width="369" height="23.5"/>
+                                <rect key="frame" x="46" y="435" width="322.5" height="26"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="20"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,19 +87,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GOLDEN RATIO,  φ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-ld-Al2">
-                                <rect key="frame" x="20" y="75" width="382.5" height="40"/>
+                                <rect key="frame" x="20" y="75" width="322" height="34"/>
                                 <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="34"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio,  φ is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
-                                <rect key="frame" x="20" y="123" width="374" height="59.5"/>
+                                <rect key="frame" x="20" y="117" width="374" height="44"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="agu-YC-IfV">
-                                <rect key="frame" x="20" y="212.5" width="169" height="32"/>
+                                <rect key="frame" x="20" y="191" width="169" height="32"/>
                                 <color key="backgroundColor" name="Golden"/>
                                 <segments>
                                     <segment title="Theory"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4w-s7-J9B">
-                                <rect key="frame" x="20" y="263.5" width="374" height="529.5"/>
+                                <rect key="frame" x="20" y="242" width="374" height="551"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="Golden"/>
@@ -119,13 +119,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M29-wh-6zJ">
-                                <rect key="frame" x="20" y="272.5" width="374" height="17.5"/>
+                                <rect key="frame" x="20" y="251" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diagram" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-CS-RoH">
-                                <rect key="frame" x="20" y="310" width="374" height="249.5"/>
+                                <rect key="frame" x="20" y="290.5" width="374" height="249.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aGz-CS-RoH" secondAttribute="height" multiplier="1.5:1" id="UKC-os-DK9"/>
                                 </constraints>
@@ -192,7 +192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-vz-mgM">
-                                                    <rect key="frame" x="31" y="103.5" width="66.5" height="31.5"/>
+                                                    <rect key="frame" x="35.5" y="103.5" width="57" height="27"/>
                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="27"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -277,16 +277,16 @@
                                                     <rect key="frame" x="10" y="10" width="394" height="69"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-T0-wsD">
-                                                            <rect key="frame" x="20" y="7.5" width="354" height="54.5"/>
+                                                            <rect key="frame" x="20" y="7.5" width="354" height="54"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="73.5" height="35"/>
-                                                                    <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="30"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="53.5" height="32.5"/>
+                                                                    <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="25"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
-                                                                    <rect key="frame" x="0.0" y="37" width="111" height="17.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
+                                                                    <rect key="frame" x="0.0" y="34.5" width="98" height="19.5"/>
                                                                     <color key="backgroundColor" red="0.092824585740000007" green="0.64794796710000002" blue="0.65657168629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,19 +362,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-sA-t3n">
-                                <rect key="frame" x="87" y="261" width="240" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-sA-t3n">
+                                <rect key="frame" x="50" y="291" width="314" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pE1-sA-t3n" secondAttribute="height" multiplier="1:1" id="Ii4-CQ-aYc"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-T1-ex2">
-                                <rect key="frame" x="186" y="166" width="42" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-T1-ex2">
+                                <rect key="frame" x="10" y="211" width="394" height="60"/>
+                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
+                        <constraints>
+                            <constraint firstItem="Llh-5m-BS4" firstAttribute="trailing" secondItem="bSc-T1-ex2" secondAttribute="trailing" constant="10" id="N7y-Xf-db9"/>
+                            <constraint firstItem="Llh-5m-BS4" firstAttribute="trailing" secondItem="pE1-sA-t3n" secondAttribute="trailing" constant="50" id="NK0-rB-6kx"/>
+                            <constraint firstItem="pE1-sA-t3n" firstAttribute="centerY" secondItem="mnP-oQ-J7q" secondAttribute="centerY" id="Ufl-Lm-GDK"/>
+                            <constraint firstItem="pE1-sA-t3n" firstAttribute="top" secondItem="bSc-T1-ex2" secondAttribute="bottom" constant="20" id="WCG-Vd-OpQ"/>
+                            <constraint firstItem="bSc-T1-ex2" firstAttribute="leading" secondItem="Llh-5m-BS4" secondAttribute="leading" constant="10" id="oz8-F0-ak6"/>
+                            <constraint firstItem="pE1-sA-t3n" firstAttribute="leading" secondItem="Llh-5m-BS4" secondAttribute="leading" constant="50" id="pjI-6u-bZZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Llh-5m-BS4"/>
                     </view>
                     <navigationItem key="navigationItem" id="1oQ-E4-hDV"/>
@@ -439,25 +448,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-0I-zQY">
-                                <rect key="frame" x="20" y="94" width="142.5" height="40"/>
+                                <rect key="frame" x="20" y="94" width="118.5" height="34"/>
                                 <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="34"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate the tuple of edges an edge can form a golden ratio with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uch-fb-a65">
-                                <rect key="frame" x="20" y="164" width="374" height="40"/>
+                                <rect key="frame" x="20" y="158" width="374" height="44"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your edge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81s-Ue-Mkt">
-                                <rect key="frame" x="20" y="254" width="278" height="34"/>
+                                <rect key="frame" x="20" y="252" width="289" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-gI-W5o">
-                                <rect key="frame" x="20" y="318" width="374" height="67"/>
+                                <rect key="frame" x="20" y="316" width="374" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="HMN-Pq-Gte"/>
                                 </constraints>
@@ -466,7 +475,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Bw-q9u">
-                                <rect key="frame" x="318" y="254" width="76" height="34"/>
+                                <rect key="frame" x="329" y="252" width="65" height="34"/>
                                 <color key="backgroundColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="rBD-ih-2o4"/>
