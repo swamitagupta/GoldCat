@@ -64,13 +64,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the Golden Ratio?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-ld-Al2">
-                                <rect key="frame" x="20" y="75" width="335" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Golden Ratio,  φ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-ld-Al2">
+                                <rect key="frame" x="20" y="75" width="271.5" height="29"/>
                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio,  φ is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
                                 <rect key="frame" x="20" y="112" width="374" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="889.85507246376824" y="197.54464285714286"/>
         </scene>
-        <!--Applications-->
+        <!--Application View Controller-->
         <scene sceneID="1hi-Pb-CS1">
             <objects>
                 <viewController id="5fg-xJ-7Qf" customClass="ApplicationViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-iG-8L3">
-                                <rect key="frame" x="30" y="94" width="354" height="719"/>
+                                <rect key="frame" x="30" y="138" width="354" height="675"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VDp-S1-WqP">
                                     <size key="itemSize" width="128" height="128"/>
@@ -169,14 +169,31 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jfX-SZ-arE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Applications" image="lightbulb.fill" catalog="system" id="6dP-g3-yJA"/>
+                    <navigationItem key="navigationItem" id="3hb-7i-cqT"/>
                     <connections>
                         <outlet property="collectionView" destination="4bM-iG-8L3" id="43n-ZU-N2B"/>
+                        <segue destination="G3l-IS-niT" kind="show" id="DRV-c1-Ue9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlW-VP-x5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.95652173913049" y="-451.33928571428567"/>
+            <point key="canvasLocation" x="1626" y="-451"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Crk-Iw-qmZ">
+            <objects>
+                <viewController id="G3l-IS-niT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsJ-B4-3tU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="DarkBlue"/>
+                        <viewLayoutGuide key="safeArea" id="wJh-xf-afK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OJ9-cS-UHU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsg-1Y-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2309" y="-451"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Tl-KM-T7T">
@@ -192,7 +209,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="NgB-MV-SKQ" kind="relationship" relationship="viewControllers" id="cog-Ey-ssX"/>
-                        <segue destination="5fg-xJ-7Qf" kind="relationship" relationship="viewControllers" id="8Cy-Zh-Y4o"/>
+                        <segue destination="zdP-UT-dUC" kind="relationship" relationship="viewControllers" id="8Cy-Zh-Y4o"/>
                         <segue destination="Kt9-zL-VaC" kind="relationship" relationship="viewControllers" id="5dC-0d-yax"/>
                     </connections>
                 </tabBarController>
@@ -220,11 +237,35 @@
             </objects>
             <point key="canvasLocation" x="885.50724637681162" y="849.77678571428567"/>
         </scene>
+        <!--Applications-->
+        <scene sceneID="hep-Sj-1ef">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdP-UT-dUC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Applications" image="lightbulb.fill" catalog="system" id="6dP-g3-yJA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U0C-vM-K8p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5fg-xJ-7Qf" kind="relationship" relationship="rootViewController" id="Mfz-31-Iq6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAV-al-fhY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="-451.33928571428567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <namedColor name="DarkBlue">
+            <color red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Golden">
             <color red="0.83137254901960778" green="0.68627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
