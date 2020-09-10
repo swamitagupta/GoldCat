@@ -24,7 +24,7 @@ UIImage(named: "design-layout"),
 UIImage(named: "design-poster")
 ])
 
-let architecture = Applications(list: ["The Parthenon","Taj Mahal","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of zeus"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj"),
+let architecture = Applications(list: ["The Parthenon","Taj Mahal","The Great Pyramid","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of zeus"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj"),UIImage(named: "arch-pyr"),
 UIImage(named: "arch-notre"),
 UIImage(named: "arch-kairouan"),
 UIImage(named: "arch-borobudur"),
@@ -36,12 +36,10 @@ let art = Applications(list: ["Monalisa","Bathers at Asnières","Piet Mondrian's
 
 let music = Applications(list: ["Violin","Piano","Shankh","Notes"], images: [UIImage(named: "mus-violin"), UIImage(named: "mus-piano"),UIImage(named: "mus-shankh"), UIImage(named: "mus-notes")])
 
-let finance = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let finance = Applications(list: ["Stock Market","Fibonacci Retracements"], images: [UIImage(named: "fin-stock"), UIImage(named: "fin-fibo")])
 
-let nature = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let nature = Applications(list: ["Rose","Human","Sea Shell", "Waves","Butterfly"], images: [UIImage(named: "nat-rose"), UIImage(named: "nat-human"),UIImage(named: "nat-shell"), UIImage(named: "nat-wave"),UIImage(named: "nat-bf")])
 
-let math = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let math = Applications(list: ["The Golden Triangle","Unit circle"], images: [UIImage(named: "mat-t"), UIImage(named: "mat-uc")])
 
-let pyramids = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
-
-let listing = [design, architecture, engineering, art, music, finance,nature,math,pyramids]
+let listing = [design, architecture, engineering, art, music, finance,nature,math]
