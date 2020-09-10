@@ -17,6 +17,7 @@
 		70366ACC250A179A000754FA /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366ACB250A179A000754FA /* ApplicationViewController.swift */; };
 		70366ACF250A17B1000754FA /* ImplementationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366ACE250A17B1000754FA /* ImplementationViewController.swift */; };
 		70366AD1250A18D5000754FA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD0250A18D5000754FA /* CollectionViewCell.swift */; };
+		70366AD3250A3D1B000754FA /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD2250A3D1B000754FA /* Content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		70366ACB250A179A000754FA /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		70366ACE250A17B1000754FA /* ImplementationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementationViewController.swift; sourceTree = "<group>"; };
 		70366AD0250A18D5000754FA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		70366AD2250A3D1B000754FA /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		70366AC5250A1729000754FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				70366AD2250A3D1B000754FA /* Content.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				70366ACF250A17B1000754FA /* ImplementationViewController.swift in Sources */,
 				70366ACC250A179A000754FA /* ApplicationViewController.swift in Sources */,
 				70366AB625074123000754FA /* ViewController.swift in Sources */,
+				70366AD3250A3D1B000754FA /* Content.swift in Sources */,
 				70366AD1250A18D5000754FA /* CollectionViewCell.swift in Sources */,
 				70366AB225074123000754FA /* AppDelegate.swift in Sources */,
 				70366AB425074123000754FA /* SceneDelegate.swift in Sources */,

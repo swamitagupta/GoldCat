@@ -10,21 +10,30 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textLabel.text = theory.text
+        imageView.isHidden = true
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func indexChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            textLabel.text = theory.text
+            imageView.isHidden = true
+        case 1:
+            textLabel.text = illustration.text
+            imageView.isHidden = false
+        default:
+            break
+        }
     }
-    */
 
 }
