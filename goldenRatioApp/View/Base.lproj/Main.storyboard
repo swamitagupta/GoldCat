@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your image!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-Bm-EGT">
+                                <rect key="frame" x="129.5" y="436" width="155.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Rf-gCz">
                                 <rect key="frame" x="0.0" y="88" width="414" height="566"/>
                                 <constraints>
@@ -24,8 +30,10 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KYL-Bm-EGT" firstAttribute="centerX" secondItem="FCb-Eu-5dW" secondAttribute="centerX" id="Kxi-lf-y2n"/>
+                            <constraint firstItem="KYL-Bm-EGT" firstAttribute="centerY" secondItem="FCb-Eu-5dW" secondAttribute="centerY" id="L9Z-Mf-M8s"/>
                             <constraint firstItem="nR8-Rf-gCz" firstAttribute="trailing" secondItem="0Zp-yP-uFo" secondAttribute="trailing" id="hfe-Q5-hBB"/>
                             <constraint firstItem="nR8-Rf-gCz" firstAttribute="leading" secondItem="0Zp-yP-uFo" secondAttribute="leading" id="mca-37-uop"/>
                             <constraint firstItem="nR8-Rf-gCz" firstAttribute="top" secondItem="0Zp-yP-uFo" secondAttribute="top" id="yvW-Qh-yNt"/>
@@ -65,11 +73,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
                                 <rect key="frame" x="20" y="112" width="374" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9cV-cg-5hi" firstAttribute="leading" secondItem="Hge-W2-2cp" secondAttribute="leading" constant="20" id="Jdg-qY-OBB"/>
                             <constraint firstItem="Hge-W2-2cp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LWG-ld-Al2" secondAttribute="trailing" symbolic="YES" id="KcT-4Z-bcC"/>
@@ -96,7 +104,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-iG-8L3">
                                 <rect key="frame" x="30" y="94" width="354" height="719"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VDp-S1-WqP">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -117,8 +125,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle.lefthalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hj5-3z-8mf">
-                                                    <rect key="frame" x="30" y="42.5" width="68" height="43"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hj5-3z-8mf">
+                                                    <rect key="frame" x="30" y="41.5" width="68" height="45"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="daI-J2-FXv"/>
@@ -126,6 +134,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Hj5-3z-8mf" firstAttribute="centerX" secondItem="8bz-cJ-uSA" secondAttribute="centerX" id="hHt-W1-YG9"/>
                                                 <constraint firstItem="jHT-vz-mgM" firstAttribute="centerX" secondItem="Hj5-3z-8mf" secondAttribute="centerX" id="o0D-g8-DFi"/>
@@ -133,6 +142,7 @@
                                                 <constraint firstItem="jHT-vz-mgM" firstAttribute="top" secondItem="Hj5-3z-8mf" secondAttribute="bottom" constant="8" id="rm5-5h-Fe3"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -150,7 +160,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4bM-iG-8L3" firstAttribute="leading" secondItem="1Fb-TA-cJs" secondAttribute="leading" constant="30" id="Hm7-fV-yRF"/>
                             <constraint firstItem="4bM-iG-8L3" firstAttribute="top" secondItem="jfX-SZ-arE" secondAttribute="top" constant="50" id="bUu-ER-tsu"/>
@@ -175,7 +185,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zqg-YH-DUw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" name="Golden"/>
                     </tabBar>
                     <connections>
@@ -197,6 +209,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I5O-Gu-dhC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -212,9 +225,8 @@
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
-        <image name="triangle.lefthalf.fill" catalog="system" width="128" height="112"/>
         <namedColor name="Golden">
-            <color red="0.83099997043609619" green="0.68599998950958252" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83137254901960778" green="0.68627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
