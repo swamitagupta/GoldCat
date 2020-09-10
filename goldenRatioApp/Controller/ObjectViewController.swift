@@ -8,12 +8,19 @@
 
 import UIKit
 
+class ObjectCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+}
+
 class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
     var ind = 0
     var list : [String] = []
+    let fields = ["Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math", "Pyramids"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +34,9 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-        cell.textLabel?.text = list[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectCell
+        cell.titleLabel?.text = list[indexPath.row]
+        cell.descriptionLabel?.text = fields[ind]
         return cell
     }
     
@@ -36,5 +44,8 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "objectToDetail", sender: nil)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100;//Choose your custom row height
+    }
 
 }

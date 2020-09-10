@@ -192,16 +192,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-vz-mgM">
-                                                    <rect key="frame" x="35.5" y="94.5" width="57" height="27"/>
+                                                    <rect key="frame" x="35.5" y="103.5" width="57" height="27"/>
                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="27"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hj5-3z-8mf">
-                                                    <rect key="frame" x="30" y="42" width="68" height="44"/>
+                                                    <rect key="frame" x="30" y="33" width="68" height="62"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="45" id="daI-J2-FXv"/>
+                                                        <constraint firstAttribute="height" constant="63" id="daI-J2-FXv"/>
                                                         <constraint firstAttribute="width" constant="68" id="edh-2F-hlo"/>
                                                     </constraints>
                                                 </imageView>
@@ -261,18 +261,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-JN-lPP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-JN-lPP">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="GkG-zf-aGJ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectCell" rowHeight="89" id="GkG-zf-aGJ" customClass="ObjectCell" customModule="goldenRatioApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GkG-zf-aGJ" id="xXz-Ws-MyT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXQ-5p-sPR">
+                                                    <rect key="frame" x="10" y="10" width="394" height="69"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-T0-wsD">
+                                                            <rect key="frame" x="20" y="9" width="354" height="51.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="30"/>
+                                                                    <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="30"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
+                                                                    <rect key="frame" x="0.0" y="32" width="98" height="19.5"/>
+                                                                    <color key="backgroundColor" name="Golden"/>
+                                                                    <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="bhr-8s-IGT" firstAttribute="leading" secondItem="eyY-T0-wsD" secondAttribute="leading" id="inF-ys-eK6"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="eyY-T0-wsD" firstAttribute="leading" secondItem="LXQ-5p-sPR" secondAttribute="leading" constant="20" id="AqD-ye-aHs"/>
+                                                        <constraint firstAttribute="trailing" secondItem="eyY-T0-wsD" secondAttribute="trailing" constant="20" id="MiT-vT-all"/>
+                                                        <constraint firstItem="eyY-T0-wsD" firstAttribute="centerY" secondItem="LXQ-5p-sPR" secondAttribute="centerY" id="bN9-zD-fK1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LXQ-5p-sPR" secondAttribute="trailing" constant="10" id="FDW-hr-3eP"/>
+                                                <constraint firstAttribute="bottom" secondItem="LXQ-5p-sPR" secondAttribute="bottom" constant="10" id="Udg-cs-zBc"/>
+                                                <constraint firstItem="LXQ-5p-sPR" firstAttribute="top" secondItem="xXz-Ws-MyT" secondAttribute="top" constant="10" id="g5y-KJ-0Hz"/>
+                                                <constraint firstItem="LXQ-5p-sPR" firstAttribute="leading" secondItem="xXz-Ws-MyT" secondAttribute="leading" constant="10" id="n8O-bj-arl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="bhr-8s-IGT" id="qbq-oC-zFp"/>
+                                            <outlet property="titleLabel" destination="ywa-Ui-4sW" id="WA1-Xw-R8Y"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -297,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsg-1Y-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2308.695652173913" y="-451.33928571428567"/>
+            <point key="canvasLocation" x="2307.2463768115945" y="-451.33928571428567"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="eIq-qw-SHM">

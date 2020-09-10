@@ -63,6 +63,14 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
         var vc = segue.destination as! ObjectViewController
         vc.ind = ind
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
-
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 }
