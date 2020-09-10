@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your image using the camera icon! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-Bm-EGT">
-                                <rect key="frame" x="46" y="435" width="322.5" height="26"/>
+                                <rect key="frame" x="22.5" y="436.5" width="369" height="23.5"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="20"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxX-uC-f5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2058" y="850"/>
+            <point key="canvasLocation" x="1625" y="200"/>
         </scene>
         <!--About-->
         <scene sceneID="3rw-pz-Pcp">
@@ -87,19 +87,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GOLDEN RATIO,  φ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWG-ld-Al2">
-                                <rect key="frame" x="20" y="75" width="322" height="34"/>
+                                <rect key="frame" x="20" y="75" width="382.5" height="40"/>
                                 <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="34"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio,  φ is mathematically defined as the ratio between two quantities, a and b, if (a+b)/a = a/b." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-cg-5hi">
-                                <rect key="frame" x="20" y="117" width="374" height="44"/>
+                                <rect key="frame" x="20" y="123" width="374" height="59.5"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="agu-YC-IfV">
-                                <rect key="frame" x="20" y="191" width="169" height="32"/>
+                                <rect key="frame" x="20" y="212.5" width="169" height="32"/>
                                 <color key="backgroundColor" name="Golden"/>
                                 <segments>
                                     <segment title="Theory"/>
@@ -111,7 +111,7 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4w-s7-J9B">
-                                <rect key="frame" x="20" y="242" width="374" height="551"/>
+                                <rect key="frame" x="20" y="263.5" width="374" height="529.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="Golden"/>
@@ -119,13 +119,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M29-wh-6zJ">
-                                <rect key="frame" x="20" y="251" width="374" height="19.5"/>
+                                <rect key="frame" x="20" y="272.5" width="374" height="17.5"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diagram" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-CS-RoH">
-                                <rect key="frame" x="20" y="290.5" width="374" height="249.5"/>
+                                <rect key="frame" x="20" y="310" width="374" height="249.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aGz-CS-RoH" secondAttribute="height" multiplier="1.5:1" id="UKC-os-DK9"/>
                                 </constraints>
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFD-nc-nqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889.85507246376824" y="197.54464285714286"/>
+            <point key="canvasLocation" x="886.95652173913049" y="-1105.5803571428571"/>
         </scene>
         <!--Application View Controller-->
         <scene sceneID="1hi-Pb-CS1">
@@ -192,7 +192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-vz-mgM">
-                                                    <rect key="frame" x="35.5" y="103.5" width="57" height="27"/>
+                                                    <rect key="frame" x="31" y="103.5" width="66.5" height="31.5"/>
                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="27"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -277,16 +277,16 @@
                                                     <rect key="frame" x="10" y="10" width="394" height="69"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-T0-wsD">
-                                                            <rect key="frame" x="20" y="9" width="354" height="51.5"/>
+                                                            <rect key="frame" x="20" y="7.5" width="354" height="54.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="30"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="73.5" height="35"/>
                                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="30"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
-                                                                    <rect key="frame" x="0.0" y="32" width="98" height="19.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
+                                                                    <rect key="frame" x="0.0" y="37" width="111" height="17.5"/>
                                                                     <color key="backgroundColor" name="Golden"/>
                                                                     <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -392,6 +392,7 @@
                         <segue destination="NgB-MV-SKQ" kind="relationship" relationship="viewControllers" id="cog-Ey-ssX"/>
                         <segue destination="zdP-UT-dUC" kind="relationship" relationship="viewControllers" id="8Cy-Zh-Y4o"/>
                         <segue destination="Kt9-zL-VaC" kind="relationship" relationship="viewControllers" id="5dC-0d-yax"/>
+                        <segue destination="uve-hW-a9s" kind="relationship" relationship="viewControllers" id="BSB-Yn-QvV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjB-u3-9n3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -416,7 +417,91 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpf-Fm-Vpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885.50724637681162" y="849.77678571428567"/>
+            <point key="canvasLocation" x="887" y="200"/>
+        </scene>
+        <!--Calculate-->
+        <scene sceneID="Kl6-Xl-PMa">
+            <objects>
+                <viewController id="uve-hW-a9s" customClass="CalculateViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baa-ag-dPg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-0I-zQY">
+                                <rect key="frame" x="20" y="94" width="142.5" height="40"/>
+                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="34"/>
+                                <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate the tuple of edges an edge can form a golden ratio with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uch-fb-a65">
+                                <rect key="frame" x="20" y="149" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your edge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81s-Ue-Mkt">
+                                <rect key="frame" x="20" y="219" width="278" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-gI-W5o">
+                                <rect key="frame" x="20" y="283" width="374" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="HMN-Pq-Gte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="20"/>
+                                <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Bw-q9u">
+                                <rect key="frame" x="318" y="219" width="76" height="34"/>
+                                <color key="backgroundColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="rBD-ih-2o4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="18"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="uve-hW-a9s" eventType="touchUpInside" id="JW1-oi-Rjr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="DarkBlue"/>
+                        <constraints>
+                            <constraint firstItem="hnt-Bw-q9u" firstAttribute="leading" secondItem="81s-Ue-Mkt" secondAttribute="trailing" constant="20" id="5aN-dy-B7F"/>
+                            <constraint firstItem="J6V-0I-zQY" firstAttribute="top" secondItem="ODa-zJ-gA4" secondAttribute="top" constant="50" id="9fp-W2-eIr"/>
+                            <constraint firstItem="uch-fb-a65" firstAttribute="top" secondItem="J6V-0I-zQY" secondAttribute="bottom" constant="15" id="9yZ-dW-Kuu"/>
+                            <constraint firstItem="GFS-gI-W5o" firstAttribute="top" secondItem="81s-Ue-Mkt" secondAttribute="bottom" constant="30" id="Blh-HP-bGh"/>
+                            <constraint firstItem="GFS-gI-W5o" firstAttribute="leading" secondItem="81s-Ue-Mkt" secondAttribute="leading" id="D6n-1m-ME8"/>
+                            <constraint firstItem="J6V-0I-zQY" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="Hsn-pR-sHo"/>
+                            <constraint firstItem="81s-Ue-Mkt" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="Q4W-BC-4xU"/>
+                            <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" secondItem="GFS-gI-W5o" secondAttribute="trailing" constant="20" id="RLi-v3-S3v"/>
+                            <constraint firstAttribute="trailing" secondItem="uch-fb-a65" secondAttribute="trailing" constant="20" id="VRX-RI-8mh"/>
+                            <constraint firstItem="hnt-Bw-q9u" firstAttribute="top" secondItem="uch-fb-a65" secondAttribute="bottom" constant="30" id="bXp-TB-zNJ"/>
+                            <constraint firstItem="uch-fb-a65" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="byi-ny-Gen"/>
+                            <constraint firstItem="81s-Ue-Mkt" firstAttribute="top" secondItem="uch-fb-a65" secondAttribute="bottom" constant="30" id="gbX-Ui-a4e"/>
+                            <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" secondItem="hnt-Bw-q9u" secondAttribute="trailing" constant="20" id="naj-QR-Uio"/>
+                            <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J6V-0I-zQY" secondAttribute="trailing" symbolic="YES" id="oiP-st-Pkc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ODa-zJ-gA4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calculate" image="plus.rectangle.fill" catalog="system" id="z82-27-EHb"/>
+                    <connections>
+                        <outlet property="inputField" destination="81s-Ue-Mkt" id="cuJ-EP-6pG"/>
+                        <outlet property="resultLabel" destination="GFS-gI-W5o" id="ObM-jh-2ER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6n-LE-uuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="855.80357142857144"/>
         </scene>
         <!--Applications-->
         <scene sceneID="hep-Sj-1ef">
@@ -446,6 +531,7 @@
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="DarkBlue">
             <color red="0.10300000011920929" green="0.10499999672174454" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
