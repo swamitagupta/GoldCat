@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your image using the camera icon! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-Bm-EGT">
-                                <rect key="frame" x="46" y="435" width="322.5" height="26"/>
+                                <rect key="frame" x="22.5" y="436.5" width="369" height="23.5"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="20"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -192,7 +192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-vz-mgM">
-                                                    <rect key="frame" x="31" y="103.5" width="66.5" height="31.5"/>
+                                                    <rect key="frame" x="35.5" y="103.5" width="57" height="27"/>
                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="27"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -279,13 +279,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-T0-wsD">
                                                             <rect key="frame" x="20" y="9" width="354" height="51.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="63" height="30"/>
                                                                     <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="30"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
                                                                     <rect key="frame" x="0.0" y="32" width="98" height="19.5"/>
                                                                     <color key="backgroundColor" name="Golden"/>
                                                                     <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
@@ -473,6 +473,12 @@
                                     <action selector="calculateTapped:" destination="uve-hW-a9s" eventType="touchUpInside" id="JW1-oi-Rjr"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="1Pp-yI-i66">
+                                <rect key="frame" x="0.0" y="585" width="414" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Pp-yI-i66" secondAttribute="height" multiplier="69:38" id="Tm2-zb-Pna"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
                         <constraints>
@@ -482,11 +488,14 @@
                             <constraint firstItem="GFS-gI-W5o" firstAttribute="top" secondItem="81s-Ue-Mkt" secondAttribute="bottom" constant="30" id="Blh-HP-bGh"/>
                             <constraint firstItem="GFS-gI-W5o" firstAttribute="leading" secondItem="81s-Ue-Mkt" secondAttribute="leading" id="D6n-1m-ME8"/>
                             <constraint firstItem="J6V-0I-zQY" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="Hsn-pR-sHo"/>
+                            <constraint firstItem="1Pp-yI-i66" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" id="NAk-hv-KIr"/>
                             <constraint firstItem="81s-Ue-Mkt" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="Q4W-BC-4xU"/>
                             <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" secondItem="GFS-gI-W5o" secondAttribute="trailing" constant="20" id="RLi-v3-S3v"/>
                             <constraint firstAttribute="trailing" secondItem="uch-fb-a65" secondAttribute="trailing" constant="20" id="VRX-RI-8mh"/>
+                            <constraint firstItem="ODa-zJ-gA4" firstAttribute="bottom" secondItem="1Pp-yI-i66" secondAttribute="bottom" id="X3H-eY-50I"/>
                             <constraint firstItem="hnt-Bw-q9u" firstAttribute="top" secondItem="uch-fb-a65" secondAttribute="bottom" constant="50" id="bXp-TB-zNJ"/>
                             <constraint firstItem="uch-fb-a65" firstAttribute="leading" secondItem="ODa-zJ-gA4" secondAttribute="leading" constant="20" id="byi-ny-Gen"/>
+                            <constraint firstItem="1Pp-yI-i66" firstAttribute="trailing" secondItem="ODa-zJ-gA4" secondAttribute="trailing" id="fD6-8P-CAz"/>
                             <constraint firstItem="81s-Ue-Mkt" firstAttribute="top" secondItem="uch-fb-a65" secondAttribute="bottom" constant="50" id="gbX-Ui-a4e"/>
                             <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" secondItem="hnt-Bw-q9u" secondAttribute="trailing" constant="20" id="naj-QR-Uio"/>
                             <constraint firstItem="ODa-zJ-gA4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J6V-0I-zQY" secondAttribute="trailing" symbolic="YES" id="oiP-st-Pkc"/>
@@ -526,6 +535,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Illustration" width="2060" height="1159"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="diagram" width="1440" height="900"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
