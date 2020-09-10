@@ -366,15 +366,26 @@
                                 <rect key="frame" x="87" y="261" width="240" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-T1-ex2">
+                                <rect key="frame" x="186" y="166" width="42" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
                         <viewLayoutGuide key="safeArea" id="Llh-5m-BS4"/>
                     </view>
                     <navigationItem key="navigationItem" id="1oQ-E4-hDV"/>
+                    <connections>
+                        <outlet property="imageView" destination="pE1-sA-t3n" id="KZ8-wS-Y9u"/>
+                        <outlet property="titleLabel" destination="bSc-T1-ex2" id="9oo-pu-dne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUU-Nz-RiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3007" y="-451"/>
+            <point key="canvasLocation" x="3005.7971014492755" y="-451.33928571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Tl-KM-T7T">

@@ -19,6 +19,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var ind = 0
+    var index = 0
     var list : [String] = []
     let fields = ["Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math", "Pyramids"]
 
@@ -41,11 +42,18 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath.row
         performSegue(withIdentifier: "objectToDetail", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100;//Choose your custom row height
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! DetailViewController
+        vc.ind = ind
+        vc.index = index
     }
 
 }

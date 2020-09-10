@@ -30,12 +30,12 @@ UIImage(named: "arch-kairouan"),
 UIImage(named: "arch-borobudur"),
 UIImage(named: "arch-zeus")])
 
-let engineering = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let art = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let music = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let finance = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let nature = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let math = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
-let pyramids = Applications(list: ["Fibonacci sequence","Symmetries"], images: <#T##[UIImage]#>)
+let engineering = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let art = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let music = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let finance = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let nature = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let math = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
+let pyramids = Applications(list: ["Fibonacci sequence","Symmetries"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj")])
 
 let listing = [design, architecture, engineering, art, music, finance,nature,math,pyramids]
