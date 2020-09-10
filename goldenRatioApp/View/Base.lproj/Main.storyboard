@@ -206,31 +206,85 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jfX-SZ-arE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3hb-7i-cqT"/>
+                    <navigationItem key="navigationItem" id="3hb-7i-cqT">
+                        <barButtonItem key="backBarButtonItem" title="Applications" id="dOb-P3-U45"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="4bM-iG-8L3" id="43n-ZU-N2B"/>
-                        <segue destination="G3l-IS-niT" kind="show" id="DRV-c1-Ue9"/>
+                        <segue destination="G3l-IS-niT" kind="show" identifier="fieldToObject" id="DRV-c1-Ue9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlW-VP-x5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="-451"/>
         </scene>
-        <!--View Controller-->
+        <!--Object View Controller-->
         <scene sceneID="Crk-Iw-qmZ">
             <objects>
-                <viewController id="G3l-IS-niT" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsg-1Y-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="G3l-IS-niT" customClass="ObjectViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsJ-B4-3tU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-JN-lPP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="GkG-zf-aGJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GkG-zf-aGJ" id="xXz-Ws-MyT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G3l-IS-niT" id="EcG-NC-wsp"/>
+                                    <outlet property="delegate" destination="G3l-IS-niT" id="G7w-h0-Mxf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
+                        <constraints>
+                            <constraint firstItem="RhV-JN-lPP" firstAttribute="bottom" secondItem="wJh-xf-afK" secondAttribute="bottom" id="4dB-qf-DzH"/>
+                            <constraint firstItem="RhV-JN-lPP" firstAttribute="top" secondItem="wJh-xf-afK" secondAttribute="top" id="5X0-PB-n7b"/>
+                            <constraint firstItem="RhV-JN-lPP" firstAttribute="leading" secondItem="wJh-xf-afK" secondAttribute="leading" id="Hj8-Ox-6FN"/>
+                            <constraint firstItem="RhV-JN-lPP" firstAttribute="trailing" secondItem="wJh-xf-afK" secondAttribute="trailing" id="thZ-9x-QWW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wJh-xf-afK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OJ9-cS-UHU"/>
+                    <connections>
+                        <outlet property="tableView" destination="RhV-JN-lPP" id="A2U-m1-C5G"/>
+                        <segue destination="GXa-6j-E1T" kind="show" identifier="objectToDetail" id="XFu-qf-0ez"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsg-1Y-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2309" y="-451"/>
+            <point key="canvasLocation" x="2308.695652173913" y="-451.33928571428567"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="eIq-qw-SHM">
+            <objects>
+                <viewController id="GXa-6j-E1T" customClass="DetailViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mnP-oQ-J7q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-sA-t3n">
+                                <rect key="frame" x="87" y="261" width="240" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="DarkBlue"/>
+                        <viewLayoutGuide key="safeArea" id="Llh-5m-BS4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1oQ-E4-hDV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUU-Nz-RiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3007" y="-451"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Tl-KM-T7T">
@@ -302,10 +356,10 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <namedColor name="DarkBlue">
-            <color red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10300000011920929" green="0.10499999672174454" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Golden">
-            <color red="0.83137254901960778" green="0.68627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83099997043609619" green="0.68599998950958252" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -49,7 +49,7 @@
     <resources>
         <image name="Icon" width="1080" height="1080"/>
         <namedColor name="Golden">
-            <color red="0.83137254901960778" green="0.68627450980392157" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83099997043609619" green="0.68599998950958252" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

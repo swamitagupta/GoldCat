@@ -11,6 +11,7 @@ import UIKit
 class ApplicationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var ind = 0
     
     let fields = ["Design", "Architecture", "Engineering", "Art", "Music", "Nature", "Math", "Pyramids"]
     let icons = [UIImage(systemName: "pencil.and.outline")
@@ -44,7 +45,8 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        ind = indexPath.row
+        performSegue(withIdentifier: "fieldToObject", sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -54,6 +56,11 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
         // dimension for the cell's width and height.
         let dim = collectionView.bounds.width/2.1
         return CGSize(width: dim, height: dim)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! ObjectViewController
+        vc.ind = ind
     }
 
 
