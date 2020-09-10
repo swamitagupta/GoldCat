@@ -9,21 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Implement-->
+        <!--Implementation View Controller-->
         <scene sceneID="yUZ-HJ-fIb">
             <objects>
                 <viewController id="viZ-6V-4mf" customClass="ImplementationViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FCb-Eu-5dW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Rf-gCz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="566"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nR8-Rf-gCz" secondAttribute="height" multiplier="207:283" id="Ado-VE-zpE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nR8-Rf-gCz" firstAttribute="trailing" secondItem="0Zp-yP-uFo" secondAttribute="trailing" id="hfe-Q5-hBB"/>
+                            <constraint firstItem="nR8-Rf-gCz" firstAttribute="leading" secondItem="0Zp-yP-uFo" secondAttribute="leading" id="mca-37-uop"/>
+                            <constraint firstItem="nR8-Rf-gCz" firstAttribute="top" secondItem="0Zp-yP-uFo" secondAttribute="top" id="yvW-Qh-yNt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Zp-yP-uFo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Implement" image="camera.fill" catalog="system" id="7O4-d1-LLp"/>
+                    <navigationItem key="navigationItem" id="Unb-c8-UGp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="g7d-h4-jma">
+                            <color key="tintColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="viZ-6V-4mf" id="SFz-Oz-EhI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="nR8-Rf-gCz" id="bbM-Gq-aPz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxX-uC-f5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="850"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="849.77678571428567"/>
         </scene>
         <!--Home-->
         <scene sceneID="3rw-pz-Pcp">
@@ -158,12 +181,31 @@
                     <connections>
                         <segue destination="NgB-MV-SKQ" kind="relationship" relationship="viewControllers" id="cog-Ey-ssX"/>
                         <segue destination="5fg-xJ-7Qf" kind="relationship" relationship="viewControllers" id="8Cy-Zh-Y4o"/>
-                        <segue destination="viZ-6V-4mf" kind="relationship" relationship="viewControllers" id="5dC-0d-yax"/>
+                        <segue destination="Kt9-zL-VaC" kind="relationship" relationship="viewControllers" id="5dC-0d-yax"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjB-u3-9n3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="106" y="200"/>
+        </scene>
+        <!--Implement-->
+        <scene sceneID="fE6-MG-X7V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kt9-zL-VaC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Implement" image="camera.fill" catalog="system" id="7O4-d1-LLp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I5O-Gu-dhC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="viZ-6V-4mf" kind="relationship" relationship="rootViewController" id="EZH-XP-Hod"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpf-Fm-Vpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.50724637681162" y="849.77678571428567"/>
         </scene>
     </scenes>
     <resources>
