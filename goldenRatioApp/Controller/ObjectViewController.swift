@@ -11,17 +11,15 @@ import UIKit
 class ObjectCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var picture: UIImageView!
-    
-    
 }
 
-class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ObjectViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     var ind = 0
-    var index = 0
+    
     var list : [String] = []
     var images : [UIImage?] = []
     var filteredData: [String]!
@@ -32,18 +30,22 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         list = listing[ind].list
         images = listing[ind].images
+        filteredData = list
+        
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-        filteredData = list
+        (searchBar.value(forKey: "searchField") as? UITextField)!.textColor = UIColor.white
         
         for i in 0...list.count-1 {
             imageDict[list[i]] = images[i]
-            
-        (searchBar.value(forKey: "searchField") as? UITextField)!.textColor = UIColor.white
         }
-        
     }
+}
+
+//MARK: - UITableView Methods
+
+extension ObjectViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredData.count
@@ -52,19 +54,24 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectCell
         cell.titleLabel?.text = filteredData[indexPath.row]
-        cell.picture.image = imageDict[filteredData[indexPath.row]] as! UIImage
+        cell.picture.image = imageDict[filteredData[indexPath.row]]!
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300;//Choose your custom row height
+        return 300
     }
+}
+
+//MARK: - UISearchBar Methods
+
+extension ObjectViewController: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
         filteredData = searchText.isEmpty ? list : list.filter { (item: String) -> Bool in
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
         tableView.reloadData()
     }
+    
 }
