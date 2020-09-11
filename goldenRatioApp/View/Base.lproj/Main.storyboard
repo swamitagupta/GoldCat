@@ -345,6 +345,13 @@
                                 <color key="barTintColor" name="DarkBlue"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d22-uB-2Hw">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="25"/>
+                                <color key="textColor" name="Golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
                         <constraints>
@@ -359,6 +366,8 @@
                         <viewLayoutGuide key="safeArea" id="wJh-xf-afK"/>
                     </view>
                     <connections>
+                        <outlet property="messageLabel" destination="d22-uB-2Hw" id="UfD-j4-GOM"/>
+                        <outlet property="searchBar" destination="FwO-we-XyN" id="qWK-Du-MMS"/>
                         <outlet property="tableView" destination="RhV-JN-lPP" id="A2U-m1-C5G"/>
                         <segue destination="GXa-6j-E1T" kind="show" identifier="objectToDetail" id="XFu-qf-0ez"/>
                     </connections>

@@ -14,13 +14,16 @@ class ObjectCell: UITableViewCell {
     
 }
 
-class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var messageLabel: UILabel!
     
     var ind = 0
     var index = 0
     var list : [String] = []
+    var filteredData: [String]!
     let fields = ["All","Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
 
     override func viewDidLoad() {
@@ -28,15 +31,18 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         list = listing[ind].list
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.delegate = self
+        filteredData = list
+        messageLabel.isHidden = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return filteredData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectCell
-        cell.titleLabel?.text = list[indexPath.row]
+        cell.titleLabel?.text = filteredData[indexPath.row]
         cell.descriptionLabel?.text = fields[ind]
         return cell
     }
@@ -55,5 +61,13 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         vc.ind = ind
         vc.index = index
     }
-
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredData = searchText.isEmpty ? list : list.filter { (item: String) -> Bool in
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        //messageLabel.isHidden = filteredData.count == 0  ? false : true
+        tableView.reloadData()
+    }
 }
