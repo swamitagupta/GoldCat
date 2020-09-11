@@ -13,7 +13,7 @@ struct Applications {
     var images: [UIImage?]
 }
 
-let all = Applications(list: ["Apple Logo", "Google Logo", "Nat-Geo Logo", "Adidas Logo", "Twitter Logo", "Pepsi Logo", "Firefox Logo", "Website Layout", "Poster Shapes","The Parthenon","Taj Mahal","The Great Pyramid","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of zeus","Car Manufacturing","Clock Angles","Face Detection","Fibonacci sequence","Monalisa","Bathers at Asnières","Piet Mondrian's Composition", "The Sacrament of the Last Supper","Violin","Piano","Shankh","Notes","Stock Market","Fibonacci Retracements","Rose","Human","Sea Shell", "Waves","Butterfly","The Golden Triangle","Unit circle"],
+let all = Applications(list: ["Apple Logo", "Google Logo", "Nat-Geo Logo", "Adidas Logo", "Twitter Logo", "Pepsi Logo", "Firefox Logo", "Website Layout", "Poster Shapes","The Parthenon","Taj Mahal","The Great Pyramid","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of Zeus","Car Manufacturing","Clock Angles","Face Detection","Fibonacci sequence","Monalisa","Bathers at Asnières","Piet Mondrian's Composition", "The Sacrament of the Last Supper","Violin","Piano","Shankh","Notes","Stock Market","Fibonacci Retracements","Rose","Human","Sea Shell", "Waves","Butterfly","The Golden Triangle","Unit circle"],
                        images: [UIImage(named: "design-apple"),
 UIImage(named: "design-google"),
 UIImage(named: "design-natgeo"),
@@ -40,7 +40,7 @@ UIImage(named: "design-layout"),
 UIImage(named: "design-poster")
 ])
 
-let architecture = Applications(list: ["The Parthenon","Taj Mahal","The Great Pyramid","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of zeus"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj"),UIImage(named: "arch-pyr"),
+let architecture = Applications(list: ["The Parthenon","Taj Mahal","The Great Pyramid","Notre Dame","Great Mosque of Kairouan","Stupa of Borobudur","The Temple of Zeus"], images: [UIImage(named: "arch-parthenon"), UIImage(named: "arch-tj"),UIImage(named: "arch-pyr"),
 UIImage(named: "arch-notre"),
 UIImage(named: "arch-kairouan"),
 UIImage(named: "arch-borobudur"),

@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="1625" y="200"/>
         </scene>
-        <!--About-->
+        <!--Home-->
         <scene sceneID="3rw-pz-Pcp">
             <objects>
                 <viewController id="NgB-MV-SKQ" customClass="HomeViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +155,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hge-W2-2cp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="V3r-uW-zYC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="V3r-uW-zYC"/>
                     <connections>
                         <outlet property="image" destination="aGz-CS-RoH" id="cwK-af-jd2"/>
                         <outlet property="segmentedControl" destination="agu-YC-IfV" id="peG-kK-Uwa"/>
@@ -274,7 +274,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectCell" rowHeight="355" id="GkG-zf-aGJ" customClass="ObjectCell" customModule="goldenRatioApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectCell" rowHeight="355" id="GkG-zf-aGJ" customClass="ObjectCell" customModule="goldenRatioApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GkG-zf-aGJ" id="xXz-Ws-MyT">
@@ -460,25 +460,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-0I-zQY">
-                                <rect key="frame" x="20" y="94" width="118.5" height="34"/>
-                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="34"/>
+                                <rect key="frame" x="20" y="94" width="139.5" height="40"/>
+                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="40"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate the tuple of edges an edge can form a golden ratio with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uch-fb-a65">
-                                <rect key="frame" x="20" y="158" width="374" height="44"/>
+                                <rect key="frame" x="20" y="164" width="374" height="44"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your edge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81s-Ue-Mkt">
-                                <rect key="frame" x="20" y="252" width="289" height="34"/>
+                                <rect key="frame" x="20" y="258" width="289" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-gI-W5o">
-                                <rect key="frame" x="20" y="316" width="374" height="67"/>
+                                <rect key="frame" x="20" y="322" width="374" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="HMN-Pq-Gte"/>
                                 </constraints>
@@ -487,10 +487,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Bw-q9u">
-                                <rect key="frame" x="329" y="252" width="65" height="34"/>
+                                <rect key="frame" x="329" y="258" width="65" height="34"/>
                                 <color key="backgroundColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="rBD-ih-2o4"/>
+                                    <constraint firstAttribute="width" constant="65" id="te9-bi-ZRo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="18"/>
                                 <state key="normal" title="Calculate">
@@ -570,7 +571,7 @@
         <image name="Illustration" width="2060" height="1159"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="diagram" width="1440" height="900"/>
-        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>

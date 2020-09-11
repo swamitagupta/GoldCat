@@ -58,7 +58,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400;//Choose your custom row height
+        return 300;//Choose your custom row height
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
