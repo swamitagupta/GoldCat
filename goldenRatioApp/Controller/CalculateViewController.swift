@@ -18,8 +18,7 @@ class CalculateViewController: UIViewController {
     var greaterNumber = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func calculateTapped(_ sender: Any) {
@@ -34,6 +33,8 @@ class CalculateViewController: UIViewController {
         
     }
 }
+
+//MARK: - Keyboard Methods
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {

@@ -18,7 +18,6 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     @IBOutlet weak var messageLabel: UILabel!
     
     let imagePicker = UIImagePickerController()
-    
     var image : CIImage?
     
     override func viewDidLoad() {
@@ -50,7 +49,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     
 }
 
-//MARK: - UIImagePickerControllerDelegate
+//MARK: - UIImagePickerControllerDelegate Methods
 
 extension ImplementationViewController: UIImagePickerControllerDelegate {
     

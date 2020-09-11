@@ -14,8 +14,8 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
     var ind = 0
     
     let fields = ["All","Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
-    let icons = [UIImage(systemName: "rectangle.3.offgrid.fill"),
-                 UIImage(systemName: "pencil.and.outline")
+    let icons = [UIImage(systemName: "rectangle.3.offgrid.fill")
+    ,UIImage(systemName: "pencil.and.outline")
     ,UIImage(systemName: "house")
     ,UIImage(systemName: "gear")
     ,UIImage(systemName: "paintbrush.fill")
@@ -27,8 +27,6 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,7 +39,6 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
         cell.titleLabel.textColor = UIColor.black
         cell.titleLabel.text = fields[indexPath.item]
         cell.icon.image = icons[indexPath.item]
-        
         return cell
     }
     
@@ -51,16 +48,12 @@ class ApplicationViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // Compute the dimension of a cell for an NxN layout with space S between
-        // cells.  Take the collection view's width, subtract (N-1)*S points for
-        // the spaces between the cells, and then divide by N to find the final
-        // dimension for the cell's width and height.
         let dim = collectionView.bounds.width/2.1
         return CGSize(width: dim, height: dim)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! ObjectViewController
+        let vc = segue.destination as! ObjectViewController
         vc.ind = ind
     }
     
