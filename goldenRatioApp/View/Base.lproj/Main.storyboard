@@ -585,27 +585,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHh-eg-y9Q">
-                                <rect key="frame" x="20" y="74" width="111.5" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHh-eg-y9Q">
+                                <rect key="frame" x="20" y="74" width="210.5" height="40"/>
                                 <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="40"/>
                                 <color key="textColor" name="Golden"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zDF-Om-5f0">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" name="DarkBlue"/>
                         <constraints>
                             <constraint firstItem="fE6-QL-gfS" firstAttribute="top" secondItem="vHh-eg-y9Q" secondAttribute="bottom" constant="20" id="4zo-8P-Vyv"/>
                             <constraint firstItem="fE6-QL-gfS" firstAttribute="bottom" secondItem="GXq-kA-FBw" secondAttribute="bottom" id="9Cf-at-Zfl"/>
+                            <constraint firstItem="zDF-Om-5f0" firstAttribute="centerX" secondItem="WPK-un-hEF" secondAttribute="centerX" id="9ed-CS-rol"/>
                             <constraint firstItem="fE6-QL-gfS" firstAttribute="leading" secondItem="GXq-kA-FBw" secondAttribute="leading" id="K7c-Gd-r8J"/>
                             <constraint firstItem="vHh-eg-y9Q" firstAttribute="top" secondItem="GXq-kA-FBw" secondAttribute="top" constant="30" id="Rew-td-PTz"/>
                             <constraint firstItem="fE6-QL-gfS" firstAttribute="trailing" secondItem="GXq-kA-FBw" secondAttribute="trailing" id="WTl-Wf-WEc"/>
                             <constraint firstItem="GXq-kA-FBw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vHh-eg-y9Q" secondAttribute="trailing" symbolic="YES" id="qYm-6L-SUH"/>
                             <constraint firstItem="vHh-eg-y9Q" firstAttribute="leading" secondItem="GXq-kA-FBw" secondAttribute="leading" constant="20" id="s7Y-Rc-PHz"/>
+                            <constraint firstItem="zDF-Om-5f0" firstAttribute="centerY" secondItem="WPK-un-hEF" secondAttribute="centerY" id="uF6-ji-yQv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GXq-kA-FBw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Articles" image="doc.text.fill" catalog="system" id="DHJ-w6-xh9"/>
                     <connections>
+                        <outlet property="activity" destination="zDF-Om-5f0" id="8nh-qD-Pl5"/>
                         <outlet property="tableView" destination="fE6-QL-gfS" id="y06-D6-iPa"/>
                     </connections>
                 </viewController>

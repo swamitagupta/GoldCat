@@ -12,6 +12,7 @@ import SafariServices
 class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     var newsManager = NewsManager()
     
     var titles : [String] = []
@@ -20,6 +21,7 @@ class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activity.startAnimating()
         tableView.delegate = self
         tableView.dataSource = self
         newsManager.delegate = self
@@ -33,6 +35,8 @@ class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDele
                 self.descs.append(news.descriptions[i])
                 self.urls.append(news.urls[i])
                 self.tableView.reloadData()
+                self.activity.stopAnimating()
+                self.activity.isHidden = true
             }
         }
     }
