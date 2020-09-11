@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class NewsViewController: UIViewController {
 
@@ -50,5 +51,19 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    func readArticle(_ which: Int) {
+        if let url = URL(string: "https://www.hackingwithswift.com/read/\(which + 1)") {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        readArticle(indexPath.row)
     }
 }
