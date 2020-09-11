@@ -47,17 +47,22 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     
 }
 
+//MARK: - UIImagePickerControllerDelegate
+
 extension ImplementationViewController: UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         guard let uiImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
             else { fatalError("Failed to load image!") }
+        
+        initialImageView.image = uiImage
+        imagePicker.dismiss(animated: true, completion: nil)
+        
         guard let ciImage = CIImage(image: uiImage)
             else { fatalError("Failed to convert UIImage to CIImage!") }
         
         image = ciImage.oriented(forExifOrientation: Int32(uiImage.imageOrientation.rawValue))
-        initialImageView.image = uiImage
                 
         let handler = VNImageRequestHandler(ciImage: ciImage, orientation: CGImagePropertyOrientation(rawValue: CGImagePropertyOrientation.RawValue(Int32(uiImage.imageOrientation.rawValue)))!)
                 
@@ -71,7 +76,6 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                     }
                 }
             }
-    
     
     func Outline(withColor : UIColor) -> UIView {
         let view = UIView()
