@@ -73,5 +73,4 @@ extension ObjectViewController: UISearchBarDelegate{
         }
         tableView.reloadData()
     }
-    
 }
