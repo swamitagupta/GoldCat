@@ -26,17 +26,15 @@ class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDele
         newsManager.fetchNews()
     }
     
-    func didUpdateNews(_ newsManager: NewsManager, news: NewsModel) {
+    func didUpdateNews(_ newsManager: NewsManager, news: FetchedModel) {
         DispatchQueue.main.async{
-            for i in 1...10 {
-                self.titles.append(news.title)
-                self.descs.append(news.description)
-                self.urls.append(news.url)
+            for i in 0...news.titles.count-1 {
+                self.titles.append(news.titles[i])
+                self.descs.append(news.descriptions[i])
+                self.urls.append(news.urls[i])
                 self.tableView.reloadData()
             }
-            
         }
-            
     }
     
     func didFailWithError(error: Error) {
@@ -61,7 +59,7 @@ class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 150
     }
     
     func readArticle(_ site: String) {

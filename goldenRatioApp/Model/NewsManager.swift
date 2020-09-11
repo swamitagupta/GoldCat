@@ -9,7 +9,7 @@
 import Foundation
 
 protocol NewsManagerDelegate {
-    func didUpdateNews(_ newsManager: NewsManager,news: NewsModel)
+    func didUpdateNews(_ newsManager: NewsManager,news: FetchedModel)
     func didFailWithError(error: Error)
 }
 
@@ -42,17 +42,27 @@ struct NewsManager{
         }
     }
     
-    func parseJSON(_ newsData: Data) -> NewsModel? {
+    func parseJSON(_ newsData: Data) -> FetchedModel? {
             let decoder = JSONDecoder()
             do{
                 let decodedData = try decoder.decode(NewsData.self, from: newsData)
+                
+                var titles : [String] = []
+                var descs : [String] = []
+                var urls : [String] = []
+                
+                for i in 0...9 {
+                    titles.append(decodedData.articles[i].title)
+                    descs.append(decodedData.articles[i].description)
+                    urls.append(decodedData.articles[i].url)
+                }
                 
                 let title = decodedData.articles[0].title
                 let description = decodedData.articles[0].description
                 let url = decodedData.articles[0].url
                 
-                let news = NewsModel(title: title, description: description, url: url)
-                return news
+                let fetchedNews = FetchedModel(titles: titles, descriptions: descs, urls: urls)
+                return fetchedNews
                 
             } catch {
                 delegate?.didFailWithError(error: error)

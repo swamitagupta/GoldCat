@@ -13,3 +13,9 @@ struct NewsModel {
     var description: String
     var url: String
 }
+
+struct FetchedModel {
+    var titles: [String]
+    var descriptions: [String]
+    var urls: [String]
+}
