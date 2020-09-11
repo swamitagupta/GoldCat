@@ -20,7 +20,6 @@
 		70366AD3250A3D1B000754FA /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD2250A3D1B000754FA /* Content.swift */; };
 		70366AD5250A4692000754FA /* Applications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD4250A4692000754FA /* Applications.swift */; };
 		70366AD7250A4CB2000754FA /* ObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD6250A4CB2000754FA /* ObjectViewController.swift */; };
-		70366AD9250A568A000754FA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366AD8250A568A000754FA /* DetailViewController.swift */; };
 		70366ADC250A7132000754FA /* CrimsonText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70366ADB250A7132000754FA /* CrimsonText-Regular.ttf */; };
 		70366ADE250A7140000754FA /* LongCang-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70366ADD250A7140000754FA /* LongCang-Regular.ttf */; };
 		70366AE0250A987C000754FA /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70366ADF250A987C000754FA /* CalculateViewController.swift */; };
@@ -42,7 +41,6 @@
 		70366AD2250A3D1B000754FA /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		70366AD4250A4692000754FA /* Applications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applications.swift; sourceTree = "<group>"; };
 		70366AD6250A4CB2000754FA /* ObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectViewController.swift; sourceTree = "<group>"; };
-		70366AD8250A568A000754FA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		70366ADB250A7132000754FA /* CrimsonText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrimsonText-Regular.ttf"; sourceTree = "<group>"; };
 		70366ADD250A7140000754FA /* LongCang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LongCang-Regular.ttf"; sourceTree = "<group>"; };
 		70366ADF250A987C000754FA /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				70366ACB250A179A000754FA /* ApplicationViewController.swift */,
 				70366AD0250A18D5000754FA /* CollectionViewCell.swift */,
 				70366AD6250A4CB2000754FA /* ObjectViewController.swift */,
-				70366AD8250A568A000754FA /* DetailViewController.swift */,
 				70366ACE250A17B1000754FA /* ImplementationViewController.swift */,
 				70366ADF250A987C000754FA /* CalculateViewController.swift */,
 			);
@@ -205,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70366AD9250A568A000754FA /* DetailViewController.swift in Sources */,
 				70366ACF250A17B1000754FA /* ImplementationViewController.swift in Sources */,
 				70366AD7250A4CB2000754FA /* ObjectViewController.swift in Sources */,
 				70366ACC250A179A000754FA /* ApplicationViewController.swift in Sources */,

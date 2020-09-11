@@ -273,13 +273,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d22-uB-2Hw">
-                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="25"/>
-                                <color key="textColor" name="Golden"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RhV-JN-lPP">
                                 <rect key="frame" x="0.0" y="138" width="414" height="675"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -367,57 +360,13 @@
                         <viewLayoutGuide key="safeArea" id="wJh-xf-afK"/>
                     </view>
                     <connections>
-                        <outlet property="messageLabel" destination="d22-uB-2Hw" id="UfD-j4-GOM"/>
                         <outlet property="searchBar" destination="FwO-we-XyN" id="qWK-Du-MMS"/>
                         <outlet property="tableView" destination="RhV-JN-lPP" id="A2U-m1-C5G"/>
-                        <segue destination="GXa-6j-E1T" kind="show" identifier="objectToDetail" id="XFu-qf-0ez"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsg-1Y-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2307.2463768115945" y="-451.33928571428567"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="eIq-qw-SHM">
-            <objects>
-                <viewController id="GXa-6j-E1T" customClass="DetailViewController" customModule="goldenRatioApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mnP-oQ-J7q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-sA-t3n">
-                                <rect key="frame" x="50" y="291" width="314" height="314"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="pE1-sA-t3n" secondAttribute="height" multiplier="1:1" id="Ii4-CQ-aYc"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-T1-ex2">
-                                <rect key="frame" x="10" y="211" width="394" height="60"/>
-                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" name="DarkBlue"/>
-                        <constraints>
-                            <constraint firstItem="Llh-5m-BS4" firstAttribute="trailing" secondItem="bSc-T1-ex2" secondAttribute="trailing" constant="10" id="N7y-Xf-db9"/>
-                            <constraint firstItem="Llh-5m-BS4" firstAttribute="trailing" secondItem="pE1-sA-t3n" secondAttribute="trailing" constant="50" id="NK0-rB-6kx"/>
-                            <constraint firstItem="pE1-sA-t3n" firstAttribute="centerY" secondItem="mnP-oQ-J7q" secondAttribute="centerY" id="Ufl-Lm-GDK"/>
-                            <constraint firstItem="pE1-sA-t3n" firstAttribute="top" secondItem="bSc-T1-ex2" secondAttribute="bottom" constant="20" id="WCG-Vd-OpQ"/>
-                            <constraint firstItem="bSc-T1-ex2" firstAttribute="leading" secondItem="Llh-5m-BS4" secondAttribute="leading" constant="10" id="oz8-F0-ak6"/>
-                            <constraint firstItem="pE1-sA-t3n" firstAttribute="leading" secondItem="Llh-5m-BS4" secondAttribute="leading" constant="50" id="pjI-6u-bZZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Llh-5m-BS4"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1oQ-E4-hDV"/>
-                    <connections>
-                        <outlet property="imageView" destination="pE1-sA-t3n" id="KZ8-wS-Y9u"/>
-                        <outlet property="titleLabel" destination="bSc-T1-ex2" id="9oo-pu-dne"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EUU-Nz-RiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3005.7971014492755" y="-451.33928571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Tl-KM-T7T">
