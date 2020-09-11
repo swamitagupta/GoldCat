@@ -15,6 +15,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     @IBOutlet weak var initialImageView: UIImageView!
     @IBOutlet weak var finalImageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
     
     let imagePicker = UIImagePickerController()
     
@@ -23,6 +24,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        messageLabel.isHidden = true
     }
     
     lazy var detectRectangleRequest: VNDetectRectanglesRequest = {
@@ -58,6 +60,11 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             else { fatalError("Failed to load image!") }
         
         initialImageView.image = uiImage
+        
+        finalImageView.subviews.forEach({ $0.removeFromSuperview() }) 
+        finalImageView.image = uiImage
+        label.isHidden = true
+        messageLabel.isHidden = false
         print("Image loaded")
         
         guard let ciImage = CIImage(image: uiImage)
@@ -143,7 +150,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 }
                 for char in chars
                 {
-                    let view = self.Outline(withColor: UIColor.red)
+                    let view = self.Outline(withColor: UIColor.yellow)
                     view.frame = self.transform(fromRect: char.boundingBox, toViewRect: self.finalImageView)
                     self.finalImageView.image = self.initialImageView.image
                     self.finalImageView.addSubview(view)
@@ -168,7 +175,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             })
             for face in observations
             {
-                let view = self.Outline(withColor: UIColor.red)
+                let view = self.Outline(withColor: UIColor.yellow)
                 view.frame = self.transform(fromRect: face.boundingBox, toViewRect: self.self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
@@ -193,7 +200,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             })
             for rect in observations
             {
-                let view = self.Outline(withColor: UIColor.cyan)
+                let view = self.Outline(withColor: UIColor.yellow)
                 view.frame = self.transform(fromRect: rect.boundingBox, toViewRect: self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
