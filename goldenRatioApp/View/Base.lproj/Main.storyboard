@@ -72,6 +72,7 @@
                     <connections>
                         <outlet property="finalImageView" destination="xSa-OY-FhZ" id="1Ot-sv-GJZ"/>
                         <outlet property="initialImageView" destination="Vwm-v3-6uc" id="TMX-UW-r3n"/>
+                        <outlet property="label" destination="KYL-Bm-EGT" id="Yen-9Y-brZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxX-uC-f5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

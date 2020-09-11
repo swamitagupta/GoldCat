@@ -14,6 +14,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     
     @IBOutlet weak var initialImageView: UIImageView!
     @IBOutlet weak var finalImageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
     let imagePicker = UIImagePickerController()
     
@@ -57,10 +58,11 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             else { fatalError("Failed to load image!") }
         
         initialImageView.image = uiImage
-        imagePicker.dismiss(animated: true, completion: nil)
+        print("Image loaded")
         
         guard let ciImage = CIImage(image: uiImage)
             else { fatalError("Failed to convert UIImage to CIImage!") }
+        print("Image converted")
         
         image = ciImage.oriented(forExifOrientation: Int32(uiImage.imageOrientation.rawValue))
                 
@@ -75,10 +77,34 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                         print(error)
                     }
                 }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
             }
     
     func Outline(withColor : UIColor) -> UIView {
+        var golden = false
         let view = UIView()
+        let a = view.bounds.width
+        let b = view.bounds.height
+        
+        if a<b {
+            if a/b <= 1.7 {
+                if a/b >= 1.5{
+                    golden = true
+                }
+            }
+        } else {
+            if b/a <= 1.7 {
+                if b/a >= 1.5{
+                    golden = true
+                }
+            }
+        }
+        
+        if golden == true {
+            print("Golden!")
+        }
+        
         view.layer.borderColor = withColor.cgColor
         view.layer.borderWidth = 2
         view.backgroundColor = UIColor.clear
@@ -121,10 +147,10 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                     view.frame = self.transform(fromRect: char.boundingBox, toViewRect: self.finalImageView)
                     self.finalImageView.image = self.initialImageView.image
                     self.finalImageView.addSubview(view)
+                    print("Text subview added")
                 }
             }
         }
-        
     }
     
     
@@ -146,6 +172,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 view.frame = self.transform(fromRect: face.boundingBox, toViewRect: self.self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
+                print("Face subview added")
             }
         }
     }
@@ -170,6 +197,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 view.frame = self.transform(fromRect: rect.boundingBox, toViewRect: self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
+                print("Rectangle subview added")
             }
         }
     }
