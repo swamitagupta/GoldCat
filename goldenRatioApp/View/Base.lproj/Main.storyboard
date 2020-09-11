@@ -187,7 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bM-iG-8L3">
-                                <rect key="frame" x="30" y="118" width="354" height="695"/>
+                                <rect key="frame" x="30" y="178" width="354" height="635"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VDp-S1-WqP">
                                     <size key="itemSize" width="128" height="128"/>
@@ -243,13 +243,21 @@
                                     <outlet property="delegate" destination="5fg-xJ-7Qf" id="byb-VK-NdY"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-vq-51P">
+                                <rect key="frame" x="20" y="118" width="168" height="40"/>
+                                <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="40"/>
+                                <color key="textColor" name="Golden"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.10289720450000001" green="0.10536286979999999" blue="0.29966688159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4bM-iG-8L3" firstAttribute="top" secondItem="dYb-vq-51P" secondAttribute="bottom" constant="20" id="2yT-xz-O4v"/>
                             <constraint firstItem="4bM-iG-8L3" firstAttribute="leading" secondItem="1Fb-TA-cJs" secondAttribute="leading" constant="30" id="Hm7-fV-yRF"/>
-                            <constraint firstItem="4bM-iG-8L3" firstAttribute="top" secondItem="jfX-SZ-arE" secondAttribute="top" constant="30" id="bUu-ER-tsu"/>
+                            <constraint firstItem="dYb-vq-51P" firstAttribute="leading" secondItem="jfX-SZ-arE" secondAttribute="leading" constant="20" id="b8z-ET-D0a"/>
                             <constraint firstItem="jfX-SZ-arE" firstAttribute="bottom" secondItem="4bM-iG-8L3" secondAttribute="bottom" id="gnj-Vv-b2E"/>
                             <constraint firstAttribute="trailing" secondItem="4bM-iG-8L3" secondAttribute="trailing" constant="30" id="oKZ-lp-igJ"/>
+                            <constraint firstItem="dYb-vq-51P" firstAttribute="top" secondItem="jfX-SZ-arE" secondAttribute="top" constant="30" id="sRF-MF-jgj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jfX-SZ-arE"/>
                     </view>
@@ -421,25 +429,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-0I-zQY">
-                                <rect key="frame" x="20" y="94" width="139.5" height="40"/>
+                                <rect key="frame" x="20" y="74" width="139.5" height="40"/>
                                 <fontDescription key="fontDescription" name="LongCang-Regular" family="Long Cang" pointSize="40"/>
                                 <color key="textColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate the tuple of edges an edge can form a golden ratio with." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uch-fb-a65">
-                                <rect key="frame" x="20" y="164" width="374" height="44"/>
+                                <rect key="frame" x="20" y="144" width="374" height="44"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your edge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81s-Ue-Mkt">
-                                <rect key="frame" x="20" y="258" width="289" height="34"/>
+                                <rect key="frame" x="20" y="238" width="289" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-gI-W5o">
-                                <rect key="frame" x="20" y="322" width="374" height="67"/>
+                                <rect key="frame" x="20" y="302" width="374" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="HMN-Pq-Gte"/>
                                 </constraints>
@@ -448,7 +456,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Bw-q9u">
-                                <rect key="frame" x="329" y="258" width="65" height="34"/>
+                                <rect key="frame" x="329" y="238" width="65" height="34"/>
                                 <color key="backgroundColor" red="0.74381458759999997" green="0.5683800578" blue="0.1067603156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="rBD-ih-2o4"/>
@@ -477,7 +485,7 @@
                         <color key="backgroundColor" name="DarkBlue"/>
                         <constraints>
                             <constraint firstItem="hnt-Bw-q9u" firstAttribute="leading" secondItem="81s-Ue-Mkt" secondAttribute="trailing" constant="20" id="5aN-dy-B7F"/>
-                            <constraint firstItem="J6V-0I-zQY" firstAttribute="top" secondItem="ODa-zJ-gA4" secondAttribute="top" constant="50" id="9fp-W2-eIr"/>
+                            <constraint firstItem="J6V-0I-zQY" firstAttribute="top" secondItem="ODa-zJ-gA4" secondAttribute="top" constant="30" id="9fp-W2-eIr"/>
                             <constraint firstItem="uch-fb-a65" firstAttribute="top" secondItem="J6V-0I-zQY" secondAttribute="bottom" constant="30" id="9yZ-dW-Kuu"/>
                             <constraint firstItem="GFS-gI-W5o" firstAttribute="top" secondItem="81s-Ue-Mkt" secondAttribute="bottom" constant="30" id="Blh-HP-bGh"/>
                             <constraint firstItem="GFS-gI-W5o" firstAttribute="leading" secondItem="81s-Ue-Mkt" secondAttribute="leading" id="D6n-1m-ME8"/>
