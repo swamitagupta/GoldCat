@@ -21,7 +21,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var ind = 0
     var index = 0
     var list : [String] = []
-    let fields = ["Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
+    let fields = ["All","Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
