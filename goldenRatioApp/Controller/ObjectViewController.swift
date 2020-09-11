@@ -19,15 +19,14 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var messageLabel: UILabel!
     
     var ind = 0
     var index = 0
     var list : [String] = []
     var images : [UIImage?] = []
     var filteredData: [String]!
-    var filteredImages: [UIImage?]!
     let fields = ["All","Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
+    var imageDict: [String: UIImage?] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +36,13 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         searchBar.delegate = self
         filteredData = list
-        filteredImages = images
-        messageLabel.isHidden = true
+        
+        for i in 0...list.count-1 {
+            imageDict[list[i]] = images[i]
+            
+        (searchBar.value(forKey: "searchField") as? UITextField)!.textColor = UIColor.white
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,23 +52,12 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectCell
         cell.titleLabel?.text = filteredData[indexPath.row]
-        cell.picture.image = filteredImages[indexPath.row]
+        cell.picture.image = imageDict[filteredData[indexPath.row]] as! UIImage
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        index = indexPath.row
-        performSegue(withIdentifier: "objectToDetail", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300;//Choose your custom row height
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! DetailViewController
-        vc.ind = ind
-        vc.index = index
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -72,8 +65,6 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         filteredData = searchText.isEmpty ? list : list.filter { (item: String) -> Bool in
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
-        
-        //messageLabel.isHidden = filteredData.count == 0  ? false : true
         tableView.reloadData()
     }
 }
