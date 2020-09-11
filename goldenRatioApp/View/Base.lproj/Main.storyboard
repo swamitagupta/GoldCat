@@ -274,48 +274,38 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectCell" rowHeight="89" id="GkG-zf-aGJ" customClass="ObjectCell" customModule="goldenRatioApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="89"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ObjectCell" rowHeight="355" id="GkG-zf-aGJ" customClass="ObjectCell" customModule="goldenRatioApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GkG-zf-aGJ" id="xXz-Ws-MyT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXQ-5p-sPR">
-                                                    <rect key="frame" x="10" y="10" width="394" height="69"/>
+                                                    <rect key="frame" x="10" y="10" width="394" height="335"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eyY-T0-wsD">
-                                                            <rect key="frame" x="20" y="7.5" width="354" height="54"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="53.5" height="32.5"/>
-                                                                    <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="25"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text saclhifshvlw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhr-8s-IGT">
-                                                                    <rect key="frame" x="0.0" y="34.5" width="98" height="19.5"/>
-                                                                    <color key="backgroundColor" red="0.092824585740000007" green="0.64794796710000002" blue="0.65657168629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="15"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <userDefinedRuntimeAttributes>
-                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                            <integer key="value" value="5"/>
-                                                                        </userDefinedRuntimeAttribute>
-                                                                    </userDefinedRuntimeAttributes>
-                                                                </label>
-                                                            </subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-Ui-4sW">
+                                                            <rect key="frame" x="10" y="10" width="374" height="32.5"/>
                                                             <constraints>
-                                                                <constraint firstItem="bhr-8s-IGT" firstAttribute="leading" secondItem="eyY-T0-wsD" secondAttribute="leading" id="inF-ys-eK6"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32.5" id="seK-87-Bhb"/>
                                                             </constraints>
-                                                        </stackView>
+                                                            <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="25"/>
+                                                            <color key="textColor" name="Sea"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7i7-p2-IHI">
+                                                            <rect key="frame" x="10" y="52.5" width="374" height="272.5"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="eyY-T0-wsD" firstAttribute="leading" secondItem="LXQ-5p-sPR" secondAttribute="leading" constant="20" id="AqD-ye-aHs"/>
-                                                        <constraint firstAttribute="trailing" secondItem="eyY-T0-wsD" secondAttribute="trailing" constant="20" id="MiT-vT-all"/>
-                                                        <constraint firstItem="eyY-T0-wsD" firstAttribute="centerY" secondItem="LXQ-5p-sPR" secondAttribute="centerY" id="bN9-zD-fK1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7i7-p2-IHI" secondAttribute="trailing" constant="10" id="4YQ-Nc-BPv"/>
+                                                        <constraint firstItem="7i7-p2-IHI" firstAttribute="leading" secondItem="LXQ-5p-sPR" secondAttribute="leading" constant="10" id="8px-BO-pFt"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ywa-Ui-4sW" secondAttribute="trailing" constant="10" id="FJS-iw-tQw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7i7-p2-IHI" secondAttribute="bottom" constant="10" id="ccz-Ih-6ay"/>
+                                                        <constraint firstItem="ywa-Ui-4sW" firstAttribute="top" secondItem="LXQ-5p-sPR" secondAttribute="top" constant="10" id="dC5-6b-rEs"/>
+                                                        <constraint firstItem="7i7-p2-IHI" firstAttribute="top" secondItem="ywa-Ui-4sW" secondAttribute="bottom" constant="10" id="kKg-jb-teG"/>
+                                                        <constraint firstItem="ywa-Ui-4sW" firstAttribute="leading" secondItem="LXQ-5p-sPR" secondAttribute="leading" constant="10" id="lE3-OK-Uga"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -333,7 +323,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="bhr-8s-IGT" id="qbq-oC-zFp"/>
+                                            <outlet property="picture" destination="7i7-p2-IHI" id="Fdf-fg-qjA"/>
                                             <outlet property="titleLabel" destination="ywa-Ui-4sW" id="WA1-Xw-R8Y"/>
                                         </connections>
                                     </tableViewCell>
@@ -589,6 +579,9 @@
         </namedColor>
         <namedColor name="Golden">
             <color red="0.83099997043609619" green="0.68599998950958252" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sea">
+            <color red="0.093000002205371857" green="0.64800000190734863" blue="0.65700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

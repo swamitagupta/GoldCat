@@ -10,7 +10,8 @@ import UIKit
 
 class ObjectCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var picture: UIImageView!
+    
     
 }
 
@@ -23,16 +24,20 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var ind = 0
     var index = 0
     var list : [String] = []
+    var images : [UIImage?] = []
     var filteredData: [String]!
+    var filteredImages: [UIImage?]!
     let fields = ["All","Design", "Architecture", "Engineering", "Art", "Music","Finance", "Nature", "Math"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         list = listing[ind].list
+        images = listing[ind].images
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
         filteredData = list
+        filteredImages = images
         messageLabel.isHidden = true
     }
     
@@ -43,7 +48,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObjectCell", for: indexPath) as! ObjectCell
         cell.titleLabel?.text = filteredData[indexPath.row]
-        cell.descriptionLabel?.text = fields[ind]
+        cell.picture.image = filteredImages[indexPath.row]
         return cell
     }
     
@@ -53,7 +58,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100;//Choose your custom row height
+        return 400;//Choose your custom row height
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,6 +72,7 @@ class ObjectViewController: UIViewController, UITableViewDelegate, UITableViewDa
         filteredData = searchText.isEmpty ? list : list.filter { (item: String) -> Bool in
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
+        
         //messageLabel.isHidden = filteredData.count == 0  ? false : true
         tableView.reloadData()
     }
