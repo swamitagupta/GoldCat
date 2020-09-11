@@ -9,43 +9,54 @@
 import UIKit
 import SafariServices
 
-class NewsViewController: UIViewController {
-
+class NewsViewController: UIViewController, NewsManagerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
+    var newsManager = NewsManager()
+    
+    var titles : [String] = []
+    var descs : [String] = []
+    var urls : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
-        // Do any additional setup after loading the view.
+        newsManager.delegate = self
+        newsManager.fetchNews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didUpdateNews(_ newsManager: NewsManager, news: NewsModel) {
+        DispatchQueue.main.async{
+            for i in 1...10 {
+                self.titles.append(news.title)
+                self.descs.append(news.description)
+                self.urls.append(news.url)
+                self.tableView.reloadData()
+            }
+            
+        }
+            
     }
-    */
-
-}
-
-//MARK: - UITableView Methods
-
-extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func didFailWithError(error: Error) {
+        print(error.localizedDescription)
+        let alert = UIAlertController(title: "Error", message: "Unable to load, please try later!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title:"Okay", style: .default, handler: nil))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return titles.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
-        //cell.titleLabel?.text = filteredData[indexPath.row]
-        //cell.picture.image = imageDict[filteredData[indexPath.row]]!
+        cell.title.text = titles[indexPath.row]
+        cell.descriptionLabel.text = descs[indexPath.row]
         return cell
     }
     
@@ -53,17 +64,16 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         return 120
     }
     
-    func readArticle(_ which: Int) {
-        if let url = URL(string: "https://www.hackingwithswift.com/read/\(which + 1)") {
+    func readArticle(_ site: String) {
+        if let url = URL(string: site) {
             let config = SFSafariViewController.Configuration()
             config.entersReaderIfAvailable = true
-
             let vc = SFSafariViewController(url: url, configuration: config)
             present(vc, animated: true)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        readArticle(indexPath.row)
+        readArticle(urls[indexPath.row])
     }
 }

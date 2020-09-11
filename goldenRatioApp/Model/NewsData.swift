@@ -8,19 +8,13 @@
 
 import Foundation
 import UIKit
-/*
+
 struct NewsData: Codable {
-    var articles: Articles
+    var articles: [Articles]
 }
 
 struct Articles: Codable {
-}
-
-struct hello {
     var title: String
     var description: String
-    var image: UIImage
     var url: String
-    var time: String
 }
-*/

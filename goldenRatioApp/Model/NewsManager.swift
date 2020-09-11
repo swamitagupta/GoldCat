@@ -7,15 +7,20 @@
 //
 
 import Foundation
-/*
-protocol WeatherManagerDelegate {
-    
+
+protocol NewsManagerDelegate {
+    func didUpdateNews(_ newsManager: NewsManager,news: NewsModel)
+    func didFailWithError(error: Error)
 }
 
 struct NewsManager{
     let newsURL = "https://gnews.io/api/v3/search?q=golden+ratio&token=85ec6eaf1a975c14f3aaf6b208c2706c"
     
     var delegate: NewsManagerDelegate?
+    
+    func fetchNews() {
+        performRequest(with: newsURL)
+    }
     
     func performRequest(with urlString: String){
         if let url = URL(string: urlString){
@@ -27,8 +32,8 @@ struct NewsManager{
                 }
                 else {
                     if let safeData = data {
-                        if let weather = self.parseJSON(safeData){
-                            self.delegate?.didUpdateWeather(self, weather: weather)
+                        if let news = self.parseJSON(safeData){
+                            self.delegate?.didUpdateNews(self, news: news)
                         }
                     }
                 }
@@ -37,37 +42,24 @@ struct NewsManager{
         }
     }
     
-    func parseJSON(_ NewsData: Data) -> NewsModel? {
-        let decoder = JSONDecoder()
-        do{
-            let decodedData = try decoder.decode(NewsData.self, from: NewsData)
-            
-            
-            
-            let title =decodedData.
-            let description = decodedData.weather[0].description
-            let temp = decodedData.main.temp
-            let name = decodedData.name
-            let temp_min = decodedData.main.temp_min
-            let temp_max = decodedData.main.temp_max
-            let speed = decodedData.wind.speed
-            let deg = decodedData.wind.deg
-            let hum = decodedData.main.humidity
-            let pre = decodedData.main.pressure
-            let vis = decodedData.visibility
-            let country = decodedData.sys.country
-            let sunrise = decodedData.sys.sunrise
-            let sunset = decodedData.sys.sunset
-            
-            
-            let news = NewsModel(title: <#T##String#>, description: <#T##String#>, image: <#T##UIImage#>, url: <#T##String#>, time: <#T##String#>)
-            return news
-            
-        } catch {
-            delegate?.didFailWithError(error: error)
-            print(error)
-            return nil
+    func parseJSON(_ newsData: Data) -> NewsModel? {
+            let decoder = JSONDecoder()
+            do{
+                let decodedData = try decoder.decode(NewsData.self, from: newsData)
+                
+                let title = decodedData.articles[0].title
+                let description = decodedData.articles[0].description
+                let url = decodedData.articles[0].url
+                
+                let news = NewsModel(title: title, description: description, url: url)
+                return news
+                
+            } catch {
+                delegate?.didFailWithError(error: error)
+                print(error)
+                return nil
+            }
         }
     }
-}
-*/
+
+

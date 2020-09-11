@@ -11,7 +11,5 @@ import Foundation
 struct NewsModel {
     var title: String
     var description: String
-    var image: UIImage
     var url: String
-    var time: String
 }
