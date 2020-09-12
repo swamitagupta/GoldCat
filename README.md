@@ -14,8 +14,6 @@ This App lets users learn about the concept of Golden Ratio, explore its applica
 
 Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities. It is used widely in the field of design and has applications in almost every other field too. This App explains the concept of Golden Ratio. It also lets the user explore its applications and its importance in the present day. It also lets them implement golden ratio in an interactive manner.
 
-## Project Screenshots
-
 ## Steps to Run
 * Clone or download the the repository. 
 * Open project file in terminal.
@@ -37,6 +35,17 @@ This App contains five tabs:
 * Vision
 * ImageIO
 * SafariServices
+
+## Project Screenshots
+<p>
+ <img src="screenshots/s1.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s2.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s3.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s4.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s5.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s6.png" alt="Home Screen" height="300"/>
+ <img src="screenshots/s7.png" alt="Home Screen" height="300"/>
+ </p>
 
 ## License
 Read [LICENSE](../master/LICENSE) for details.
