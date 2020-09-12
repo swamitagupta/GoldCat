@@ -20,6 +20,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     let imagePicker = UIImagePickerController()
     var image : CIImage?
     var golden = false
+    var containsGolden = false
     var message = "hello"
     
     override func viewDidLoad() {
@@ -106,13 +107,8 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         self.present(alert, animated: true, completion: nil)
             }
     
-    func Outline(withColor : UIColor) -> UIView {
-        
+    func create() -> UIView {
         let view = UIView()
-        
-        view.layer.borderColor = withColor.cgColor
-        view.layer.borderWidth = 2
-        view.backgroundColor = UIColor.clear
         return view
     }
     
@@ -133,17 +129,26 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             if a/b <= 1.8 {
                 if a/b >= 1.4{
                     golden = true
+                    containsGolden = true
                 }
             }
         } else {
             if b/a <= 1.8 {
                 if b/a >= 1.4{
                     golden = true
+                    containsGolden = true
                 }
             }
         }
         
         return toRect
+    }
+    
+    func border(view: UIView, withColor : UIColor) -> UIView {
+        view.layer.borderColor = withColor.cgColor
+        view.layer.borderWidth = 2
+        view.backgroundColor = UIColor.clear
+        return view
     }
     
     func chosenColor(golden: Bool) -> UIColor {
@@ -168,8 +173,10 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 }
                 for char in chars
                 {
-                    let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
+                    self.golden = false
+                    var view = self.create()
                     view.frame = self.transform(fromRect: char.boundingBox, toViewRect: self.finalImageView)
+                    view = self.border(view: view, withColor: self.chosenColor(golden: self.golden))
                     self.finalImageView.image = self.initialImageView.image
                     self.finalImageView.addSubview(view)
                 }
@@ -188,8 +195,10 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         DispatchQueue.main.async {
             for face in observations
             {
-                let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
+                self.golden = false
+                var view = self.create()
                 view.frame = self.transform(fromRect: face.boundingBox, toViewRect: self.self.finalImageView)
+                view = self.border(view: view, withColor: self.chosenColor(golden: self.golden))
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
             }
@@ -208,11 +217,12 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         DispatchQueue.main.async {
             for rect in observations
             {
-                let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
+                self.golden = false
+                var view = self.create()
                 view.frame = self.transform(fromRect: rect.boundingBox, toViewRect: self.finalImageView)
+                view = self.border(view: view, withColor: self.chosenColor(golden: self.golden))
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
-                
             }
         }
     }
