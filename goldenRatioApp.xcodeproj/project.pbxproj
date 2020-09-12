@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70366AAE25074123000754FA /* goldenRatioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goldenRatioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70366AAE25074123000754FA /* GoldCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70366AB125074123000754FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70366AB325074123000754FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		70366AB525074123000754FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		70366AAF25074123000754FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70366AAE25074123000754FA /* goldenRatioApp.app */,
+				70366AAE25074123000754FA /* GoldCat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			);
 			name = goldenRatioApp;
 			productName = goldenRatioApp;
-			productReference = 70366AAE25074123000754FA /* goldenRatioApp.app */;
+			productReference = 70366AAE25074123000754FA /* GoldCat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -384,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swams.goldenRatioApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoldCat;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swams.goldenRatioApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoldCat;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
