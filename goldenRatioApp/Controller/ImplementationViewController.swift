@@ -19,6 +19,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     
     let imagePicker = UIImagePickerController()
     var image : CIImage?
+    var golden = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,28 +89,8 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             }
     
     func Outline(withColor : UIColor) -> UIView {
-        var golden = false
+        
         let view = UIView()
-        let a = view.bounds.width
-        let b = view.bounds.height
-        
-        if a<b {
-            if a/b <= 1.7 {
-                if a/b >= 1.5{
-                    golden = true
-                }
-            }
-        } else {
-            if b/a <= 1.7 {
-                if b/a >= 1.5{
-                    golden = true
-                }
-            }
-        }
-        
-        if golden == true {
-            print("Golden!")
-        }
         
         view.layer.borderColor = withColor.cgColor
         view.layer.borderWidth = 2
@@ -126,7 +107,29 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         toRect.origin.y  = toRect.origin.y -  toRect.size.height
         toRect.origin.x =  fromRect.origin.x * toViewRect.frame.size.width
         
+        
+        let a = toRect.size.width
+        let b = toRect.size.height
+        
+        if a>b {
+            if a/b <= 1.8 {
+                if a/b >= 1.4{
+                    golden = true
+                }
+            }
+        } else {
+            if b/a <= 1.8 {
+                if b/a >= 1.4{
+                    golden = true
+                }
+            }
+        }
         return toRect
+    }
+    
+    func chosenColor(golden: Bool) -> UIColor {
+        let color = golden==true ? UIColor.yellow : UIColor.red
+        return color
     }
     
     func handleTextIdentifiaction (request: VNRequest, error: Error?) {
@@ -139,9 +142,6 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
             return
         }
         DispatchQueue.main.async {
-            self.finalImageView.subviews.forEach({ (s) in
-                s.removeFromSuperview()
-            })
             for box in observations {
                 guard let chars = box.characterBoxes else {
                     print("no char values found")
@@ -149,11 +149,10 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 }
                 for char in chars
                 {
-                    let view = self.Outline(withColor: UIColor.yellow)
+                    let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
                     view.frame = self.transform(fromRect: char.boundingBox, toViewRect: self.finalImageView)
                     self.finalImageView.image = self.initialImageView.image
                     self.finalImageView.addSubview(view)
-                    print("Text subview added")
                 }
             }
         }
@@ -167,18 +166,13 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         guard observations.first != nil else {
             return
         }
-        // Show the pre-processed image
         DispatchQueue.main.async {
-            self.finalImageView.subviews.forEach({ (s) in
-                s.removeFromSuperview()
-            })
             for face in observations
             {
-                let view = self.Outline(withColor: UIColor.yellow)
+                let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
                 view.frame = self.transform(fromRect: face.boundingBox, toViewRect: self.self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
-                print("Face subview added")
             }
         }
     }
@@ -192,18 +186,13 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         guard observations.first != nil else {
             return
         }
-        // Show the pre-processed image
         DispatchQueue.main.async {
-            self.finalImageView.subviews.forEach({ (s) in
-                s.removeFromSuperview()
-            })
             for rect in observations
             {
-                let view = self.Outline(withColor: UIColor.yellow)
+                let view = self.Outline(withColor: self.chosenColor(golden: self.golden))
                 view.frame = self.transform(fromRect: rect.boundingBox, toViewRect: self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
-                print("Rectangle subview added")
             }
         }
     }
