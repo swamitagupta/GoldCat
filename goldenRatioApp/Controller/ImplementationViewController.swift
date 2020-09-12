@@ -57,7 +57,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
             self.present(self.imagePicker, animated: true, completion: nil)
         }))
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        alert.view.tintColor = UIColor(named: "Golden")
+        alert.view.tintColor = UIColor(named: "AlertGolden")
         self.present(alert, animated: true)
     }
     
@@ -102,7 +102,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
         
         let alert = UIAlertController(title: "Result ✨", message: "Golden rectangles are shown in yellow. \nOther detected rectangles are shown in red.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default))
-        alert.view.tintColor = UIColor(named: "Golden")
+        alert.view.tintColor = UIColor(named: "AlertGolden")
         self.present(alert, animated: true, completion: nil)
             }
     
