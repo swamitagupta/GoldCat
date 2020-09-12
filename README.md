@@ -1,4 +1,6 @@
-# Golden Ratio App
+<img src="icon.png" alt="icon" height="120"/>
+
+# GoldCat: A Golden Ratio Finder App
 
 <p>
 <img alt="iOS" src="https://img.shields.io/badge/platform-iOS-blue">
@@ -8,11 +10,11 @@
  <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 </p>
 
-This App lets users learn about the concept of Golden Ratio, explore its applications and implement it in their daily lives.
+GoldCat lets users learn about the concept of Golden Ratio, explore its applications and implement it in their daily lives.
 
 ## Introduction
 
-Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities. It is used widely in the field of design and has applications in almost every other field too. This App explains the concept of Golden Ratio. It also lets the user explore its applications and its importance in the present day. It also lets them implement golden ratio in an interactive manner.
+Two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities. It is used widely in the field of design and has applications in almost every other field too. This App explains the concept of Golden Ratio. It lets them implement golden ratio in an interactive manner along with letting the user explore its applications and importance in the present day through the applications tab and news feed. Users can also import images to find golden rectangles in them. GoldCat also calculates the complimentary golden edges of an input measurement.
 
 ## Steps to Run
 * Clone or download the the repository. 
@@ -26,7 +28,7 @@ Two quantities are in the golden ratio if their ratio is the same as the ratio o
 This App contains five tabs:
 * Home tab: contains the theoretical and pictorial representation of Golden Ratio.
 * Applications tab: contains illustrations of its applications in various fields.
-* Capture tab: lets user import images and find out golden rectangles in them.
+* Capture tab: lets user import images and find out golden rectangles in faces, texts and rectangles found.
 * Calculate tab: calculates golden ratio edges for a user-input measurement.
 * Articles tab: lists recent news articles related to the Golden Ratio and leads to respective websites.
 
