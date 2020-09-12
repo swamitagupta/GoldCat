@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="height" constant="414" id="GxG-jy-Ts1"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💡: Golden Rectangles are the rectangles formed using the golden ratio measurements as its edges." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueS-OP-sAu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💡: Golden Rectangles are the rectangles formed using the golden ratio measurements as its edges." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueS-OP-sAu">
                                 <rect key="frame" x="30" y="739" width="364" height="44"/>
                                 <fontDescription key="fontDescription" name="CrimsonText-Regular" family="Crimson Text" pointSize="17"/>
                                 <color key="textColor" name="Golden"/>

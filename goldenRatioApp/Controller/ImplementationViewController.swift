@@ -20,6 +20,7 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     let imagePicker = UIImagePickerController()
     var image : CIImage?
     var golden = false
+    var message = "hello"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +44,21 @@ class ImplementationViewController: UIViewController, UINavigationControllerDele
     }()
     
     @IBAction func cameraTapped(_ sender: Any) {
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = false
-        present(imagePicker, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Import Image", message: "From where do you want to import your image?", preferredStyle: .actionSheet)
+
+        alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { action in
+            self.imagePicker.sourceType = .photoLibrary
+            self.imagePicker.allowsEditing = false
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Capture from Camera", style: .default, handler: { action in
+            self.imagePicker.sourceType = .camera
+            self.imagePicker.allowsEditing = false
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+        alert.view.tintColor = UIColor(named: "Golden")
+        self.present(alert, animated: true)
     }
     
 }
@@ -86,6 +99,11 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 }
         
         imagePicker.dismiss(animated: true, completion: nil)
+        
+        let alert = UIAlertController(title: "Result ✨", message: "Golden rectangles are shown in yellow. \nOther detected rectangles are shown in red.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+        alert.view.tintColor = UIColor(named: "Golden")
+        self.present(alert, animated: true, completion: nil)
             }
     
     func Outline(withColor : UIColor) -> UIView {
@@ -124,6 +142,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 }
             }
         }
+        
         return toRect
     }
     
@@ -193,6 +212,7 @@ extension ImplementationViewController: UIImagePickerControllerDelegate {
                 view.frame = self.transform(fromRect: rect.boundingBox, toViewRect: self.finalImageView)
                 self.finalImageView.image = self.initialImageView.image
                 self.finalImageView.addSubview(view)
+                
             }
         }
     }
