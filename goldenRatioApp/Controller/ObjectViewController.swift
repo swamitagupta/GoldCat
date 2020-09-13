@@ -37,6 +37,8 @@ class ObjectViewController: UIViewController {
         searchBar.delegate = self
         (searchBar.value(forKey: "searchField") as? UITextField)!.textColor = UIColor.white
         
+        self.hideKeyboardWhenTappedAround()
+        
         for i in 0...list.count-1 {
             imageDict[list[i]] = images[i]
         }
